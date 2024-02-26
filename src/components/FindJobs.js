@@ -4,7 +4,7 @@ import jobs from "../images/jobs.png";
 
 export const FindJobs = () => {
   return (
-    <Box>
+    <Box sx={{ mt: 5 }}>
       <Container maxWidth="xl">
         <Grid container spacing={10}>
           <Grid item xs={12} md={6} lg={6}>
