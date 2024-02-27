@@ -13,40 +13,47 @@ export const Base = () => {
         <Box>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} lg={6}>
-              <Box>
-                <Typography
-                  sx={{
-                    color: "#FFFFFF",
-                    fontWeight: 700,
-                    fontSize: "45.35px",
-                    lineHeight: "52.73px",
-                    letterSpacing: "-1.44px",
-                  }}
-                >
-                  Ready to realise your true potential?
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "#FFFFFF",
-                    fontWeight: 400,
-                    fontSize: "30.77px",
-                    lineHeight: "46px",
-                    letterSpacing: "-0.24px",
-                  }}
-                >
-                  70% techies find their perfect opportunities within 10 days on
-                  Cutshort.
-                </Typography>
+              <Box sx={{ textAlign: "start" }}>
+                <Box sx={{ width: "80%" }}>
+                  <Typography
+                    sx={{
+                      color: "#FFFFFF",
+                      fontWeight: 700,
+                      fontSize: "45.35px",
+                      lineHeight: "52.73px",
+                      letterSpacing: "-1.44px",
+                    }}
+                  >
+                    Ready to realise your true potential?
+                  </Typography>
+                </Box>
+                <Box sx={{ width: "90%", mt: 2 }}>
+                  <Typography
+                    sx={{
+                      color: "#FFFFFF",
+                      fontWeight: 400,
+                      fontSize: "30.77px",
+                      lineHeight: "46px",
+                      letterSpacing: "-0.24px",
+                      opacity: 0.5,
+                    }}
+                  >
+                    70% techies find their perfect opportunities within 10 days
+                    on Cutshort.
+                  </Typography>
+                </Box>
               </Box>
             </Grid>
             <Grid item xs={12} md={6} lg={6}>
-              <Box>
+              <Box sx={{ textAlign: "end" }}>
                 <Button
                   sx={{
                     bgcolor: "#896DFF",
                     textTransform: "none",
                     borderRadius: "50px",
                     p: 3,
+                    pl: 8,
+                    pr: 8,
                   }}
                 >
                   <Typography

@@ -1,10 +1,10 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import empowel from "../images/empowel.png";
 
 export const Topbar = () => {
   return (
-    <Box>
+    <Card sx={{ p: 2 }}>
       <Container maxWidth="xl">
         <Box>
           <Grid container spacing={2}>
@@ -109,6 +109,6 @@ export const Topbar = () => {
           </Grid>
         </Box>
       </Container>
-    </Box>
+    </Card>
   );
 };

@@ -22,6 +22,7 @@ export const Reviews = () => {
           width: "100%",
           pt: 10,
           pb: 10,
+          mt: 8,
         }}
       >
         <Box sx={{ textAlign: "center" }}>

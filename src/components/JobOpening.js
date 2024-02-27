@@ -1,5 +1,7 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import company from "../images/company.png";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -13,7 +15,7 @@ import "swiper/css/scrollbar";
 export const JobOpening = () => {
   return (
     <>
-      <Box>
+      <Box sx={{ mt: 5 }}>
         <Box sx={{ textAlign: "center" }}>
           <Typography
             sx={{
@@ -27,7 +29,7 @@ export const JobOpening = () => {
             Job Openings Actively Hiring
           </Typography>
         </Box>
-        <Container maxWidth="xl" sx={{ mt: 10, mb: 10 }}>
+        <Container maxWidth="xl" sx={{ mt: 10, mb: 10, p: 5 }}>
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -36,7 +38,68 @@ export const JobOpening = () => {
             navigation
             onSlideChange={() => console.log("slide change")}
           >
-            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>
+              <Box sx={{ mt: 2, mb: 2, ml: 2, mr: 2 }}>
+                <Grid container spacing={4}>
+                  {[...Array(4)].map(() => (
+                    <Grid item xs={12} lg={3} md={3}>
+                      <Card
+                        elevation={1}
+                        sx={{ borderRadius: "20px", textAlign: "start", p: 5 }}
+                      >
+                        <Box>
+                          <img src={company} />
+                        </Box>
+                        <Box sx={{ mt: 5 }}>
+                          <Typography
+                            sx={{
+                              fontWeight: 700,
+                              fontSize: "25px",
+                              lineHeight: "29.5px",
+                              letterSpacing: "2%",
+                              color: "#000000",
+                            }}
+                          >
+                            Bajaj Allianz
+                          </Typography>
+                          <Box sx={{ mt: 1 }}>
+                            <Typography
+                              sx={{
+                                fontWeight: 300,
+                                fontSize: "20px",
+                                lineHeight: "25.66px",
+                                letterSpacing: "0.5%",
+                                color: "#000000",
+                              }}
+                            >
+                              Provider of life insurance and financial services.
+                            </Typography>
+                          </Box>
+                        </Box>
+                        <Box sx={{ mt: 3, display: "flex" }}>
+                          <Box>
+                            <Typography
+                              sx={{
+                                fontWeight: 500,
+                                fontSize: "19.44px",
+                                lineHeight: "22.93px",
+                                letterSpacing: "0.2%",
+                                color: "#000000",
+                              }}
+                            >
+                              View Jobs
+                            </Typography>
+                          </Box>
+                          <Box>
+                            <ChevronRightIcon />
+                          </Box>
+                        </Box>
+                      </Card>
+                    </Grid>
+                  ))}
+                </Grid>
+              </Box>
+            </SwiperSlide>
             <SwiperSlide>Slide 2</SwiperSlide>
             <SwiperSlide>Slide 3</SwiperSlide>
             <SwiperSlide>Slide 4</SwiperSlide>

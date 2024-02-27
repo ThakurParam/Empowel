@@ -9,7 +9,7 @@ export const FindJobs = () => {
         <Grid container spacing={10}>
           <Grid item xs={12} md={6} lg={6}>
             <Box>
-              <img src={jobs} />
+              <img src={jobs} style={{ width: "100%", height: "100%" }} />
             </Box>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>

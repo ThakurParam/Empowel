@@ -6,17 +6,16 @@ import { FindJobs } from "./components/FindJobs";
 import { TrendingJobs } from "./components/TrendingJobs";
 
 import { Popularjobs } from "./components/Popularjobs";
-// import { Cardsss } from "./Assests/Cardsss";
 import { Reviews } from "./components/Reviews";
 import { Register } from "./components/Register";
 import { JobOpening } from "./components/JobOpening";
-import { Cardssss2 } from "./Assests/Cardssss2";
+import { HeadBox } from "./components/HeadBox";
 
 function App() {
   return (
     <div className="App">
-      {/* <Paperz/> */}
       <Topbar />
+      <HeadBox />
       <JobOpening />
       <FindJobs />
       <TrendingJobs />
@@ -24,8 +23,6 @@ function App() {
       <Popularjobs />
       <Reviews />
       <Base />
-      {/* <Cardsss /> */}
-      {/* <Cardssss2 /> */}
     </div>
   );
 }
