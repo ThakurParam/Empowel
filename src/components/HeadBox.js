@@ -21,39 +21,82 @@ export const HeadBox = () => {
           src={left}
           style={{
             position: "absolute",
-            top: 0,
-            left: 0,
-            // height: "70%",
+            top: "0%",
+            left: "0%",
+            height: "70%",
+            width: "50%",
             zIndex: -1,
           }}
         />
         <img
           src={center}
-          style={{ position: "absolute", top: 30, left: "20%", zIndex: -1 }}
+          style={{
+            position: "absolute",
+            top: "5%",
+            left: "20%",
+            width: "60%",
+            zIndex: -1,
+          }}
         />
         <img
           src={right}
-          style={{ position: "absolute", top: 0, right: 0, zIndex: -1 }}
+          style={{ position: "absolute", top: "0%", right: "0%", zIndex: -1 }}
         />
         <img
           src={img1}
-          style={{ position: "absolute", zIndex: 1, top: "60%", left: 0 }}
+          className="imageman"
+          style={{
+            position: "absolute",
+            zIndex: -1,
+            top: "60%",
+            left: "0%",
+
+            // display: { xs: "none", md: "none", lg: "block" },
+          }}
         />
         <img
           src={img2}
-          style={{ position: "absolute", zIndex: 1, top: "20%", right: 0 }}
+          className="imageman"
+          style={{
+            position: "absolute",
+            zIndex: 1,
+            top: "20%",
+            right: 0,
+            // display: { xs: "none", md: "none", lg: "block" },
+          }}
         />
         <img
           src={img3}
-          style={{ position: "absolute", zIndex: 1, top: "90%", left: "10%" }}
+          className="imageman"
+          style={{
+            position: "absolute",
+            zIndex: 1,
+            top: "90%",
+            left: "10%",
+            // display: { xs: "none", md: "none", lg: "block" },
+          }}
         />
         <img
           src={img4}
-          style={{ position: "absolute", zIndex: 1, top: "20%", left: "10%" }}
+          className="imageman"
+          style={{
+            position: "absolute",
+            zIndex: 1,
+            top: "20%",
+            left: "10%",
+            // display: { xs: "none", md: "none", lg: "block" },
+          }}
         />
         <img
           src={img5}
-          style={{ position: "absolute", zIndex: 1, top: "90%", right: "5%" }}
+          className="imageman"
+          style={{
+            position: "absolute",
+            zIndex: 1,
+            top: "90%",
+            right: "5%",
+            // display: { xs: "none", md: "none", lg: "none" },
+          }}
         />
 
         <Container maxwidth="xl" sx={{ pt: 30 }}>
@@ -61,8 +104,8 @@ export const HeadBox = () => {
             <Typography
               sx={{
                 fontWeight: 900,
-                fontSize: "65px",
-                lineHeight: "84.69px",
+                fontSize: { lg: "65px", md: "55px", xs: "45px" },
+                lineHeight: { lg: "84.69px", md: "84.69px", xs: "50px" },
                 color: "#000000",
               }}
             >
@@ -73,7 +116,7 @@ export const HeadBox = () => {
             <Typography
               sx={{
                 fontWeight: 400,
-                fontSize: "35px",
+                fontSize: { lg: "35px", md: "30px", xs: "20px" },
                 lineHeight: "45.6px",
                 color: "#000000",
               }}
@@ -89,20 +132,20 @@ export const HeadBox = () => {
               alignItems: "center",
               borderRadius: "50px",
               border: "2px solid #ccc",
-              padding: " 16px",
-              width: "70%",
+              padding: { lg: " 16px", md: " 10px", xs: "5px" },
+              width: { lg: "70%", md: "70%", xs: "90%" },
               mx: "auto",
               bgcolor: "white",
             }}
           >
             <IconButton disabled aria-label="search" style={{ padding: "8px" }}>
-              <TroubleshootIcon sx={{ fontSize: 40 }} />
+              <TroubleshootIcon sx={{ fontSize: { lg: 40, md: 30, xs: 25 } }} />
             </IconButton>
             <InputBase
               placeholder="Enter skills/designation/companies | Select Experience  | Location"
               style={{
                 flex: 1,
-                fontSize: "20px",
+                fontSize: { lg: "20px", md: "20px", xs: "8px" },
                 border: "none",
                 outline: "none",
                 background: "none",
@@ -117,9 +160,9 @@ export const HeadBox = () => {
                 backgroundColor: "#5A3ED1",
                 color: "white",
                 borderRadius: "50px",
-                padding: " 16px",
+                padding: { lg: " 16px", md: " 16px", xs: "10px" },
                 marginLeft: "8px",
-                fontSize: 35,
+                fontSize: { lg: 35, md: 35, xs: 16 },
                 pl: 5,
                 pr: 5,
               }}
@@ -135,7 +178,7 @@ export const HeadBox = () => {
                 <Grid item xs={12} md={12} lg={12}>
                   <Grid container sapcing={2}>
                     {[...Array(6)].map(() => (
-                      <Grid item xs={2} md={2} lg={2}>
+                      <Grid item xs={6} md={2} lg={2}>
                         <Card
                           sx={{ borderRadius: "10px", p: 2, width: "75%   " }}
                         >
@@ -176,13 +219,7 @@ export const HeadBox = () => {
                 <Grid item xs={12} md={12} lg={12} sx={{ mt: 3 }}>
                   <Grid container sapcing={2}>
                     {[...Array(5)].map(() => (
-                      <Grid
-                        item
-                        xs={2.3}
-                        md={2.3}
-                        lg={2.3}
-                        sx={{ ml: "9.6px" }}
-                      >
+                      <Grid item xs={5} md={2.3} lg={2.3} sx={{ ml: "9.6px" }}>
                         <Card
                           sx={{ borderRadius: "10px", p: 2, width: "70%   " }}
                         >

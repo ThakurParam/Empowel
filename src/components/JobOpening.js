@@ -20,8 +20,8 @@ export const JobOpening = () => {
           <Typography
             sx={{
               fontWeight: 700,
-              fontSize: "50px",
-              lineHeight: "65.15px",
+              fontSize: { lg: "50px", md: "50px", xs: "35px" },
+              lineHeight: { lg: "65.15px", md: "65.15px", xs: "50px" },
               color: "#000000",
             }}
           >
@@ -29,7 +29,10 @@ export const JobOpening = () => {
             Job Openings Actively Hiring
           </Typography>
         </Box>
-        <Container maxWidth="xl" sx={{ mt: 10, mb: 10, p: 5 }}>
+        <Container
+          maxWidth="xl"
+          sx={{ mt: { lg: 10, md: 10, xs: 2 }, mb: 10, p: 5 }}
+        >
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}

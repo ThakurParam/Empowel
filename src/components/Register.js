@@ -15,13 +15,13 @@ export const Register = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6} lg={6} sx={{ position: "relative" }}>
-            <Box sx={{ textAlign: "start", mt: 16 }}>
+            <Box sx={{ textAlign: "start", mt: { lg: 16, md: 16, xs: 2 } }}>
               <Box>
                 <Typography
                   sx={{
                     fontWeight: 700,
-                    fontSize: "50px",
-                    lineHeight: "71.66px",
+                    fontSize: { lg: "50px", md: "50px", xs: "40px" },
+                    lineHeight: { lg: "71.66px", md: "71.66px", xs: "40px" },
                     color: "#FFFFFF",
                   }}
                 >
@@ -32,8 +32,8 @@ export const Register = () => {
                 <Typography
                   sx={{
                     fontWeight: 700,
-                    fontSize: "50px",
-                    lineHeight: "71.66px",
+                    fontSize: { lg: "50px", md: "50px", xs: "40px" },
+                    lineHeight: { lg: "71.66px", md: "71.66px", xs: "40px" },
                     color: "#FFFFFF",
                   }}
                 >
@@ -44,7 +44,7 @@ export const Register = () => {
                 <Typography
                   sx={{
                     fontWeight: 400,
-                    fontSize: "31px",
+                    fontSize: { lg: "31px", md: "31px", xs: "25px" },
                     lineHeight: "38px",
                     letterSpacing: "0.5%",
                     color: "#FFFFFF",
@@ -53,7 +53,7 @@ export const Register = () => {
                   <span
                     style={{
                       fontWeight: 700,
-                      fontSize: "45px",
+                      fontSize: { lg: "45px", md: "45px", xs: "20px" },
                       lineHeight: "38px",
                       letterSpacing: "0.5%",
                       color: "#896DFF",
@@ -64,15 +64,15 @@ export const Register = () => {
                   get contacted by employers every month through
                 </Typography>
               </Box>
-              <Box sx={{ mt: 5 }}>
+              <Box sx={{ mt: { lg: 5, md: 5, xs: 3 } }}>
                 <Button
                   sx={{ bgcolor: "#896DFF", textTransform: "none", p: 3 }}
                 >
                   <Typography
                     sx={{
                       fontWeight: 700,
-                      fontSize: "35px",
-                      lineHeight: "38px",
+                      fontSize: { lg: "35px", md: "35px", xs: "20px" },
+                      lineHeight: { lg: "38px", md: "38px", xs: "0px" },
                       letterSpacing: "0.5%",
                       color: "#FFFFFF",
                     }}
@@ -86,7 +86,7 @@ export const Register = () => {
                   <Typography
                     sx={{
                       fontWeight: 700,
-                      fontSize: "30px",
+                      fontSize: { lg: "30px", md: "30px", xs: "20px" },
                       lineHeight: "38px",
                       letterSpacing: "0.5%",
                       color: "#FFFFFF",

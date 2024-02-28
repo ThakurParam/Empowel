@@ -10,6 +10,7 @@ import { Reviews } from "./components/Reviews";
 import { Register } from "./components/Register";
 import { JobOpening } from "./components/JobOpening";
 import { HeadBox } from "./components/HeadBox";
+import { Mobiledrawer } from "./Assests/Mobiledrawer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Popularjobs />
       <Reviews />
       <Base />
+      {/* <Mobiledrawer /> */}
     </div>
   );
 }

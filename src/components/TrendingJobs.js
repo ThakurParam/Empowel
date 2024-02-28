@@ -21,8 +21,8 @@ export const TrendingJobs = () => {
         <Typography
           sx={{
             fontweight: 700,
-            fontSize: "50px",
-            lineHeight: "65.15px",
+            fontSize: { lg: "50px", md: "50px", xs: "40px" },
+            lineHeight: { lg: "65.15px", md: "65.15px", xs: "50px" },
             color: "#000000",
           }}
         >

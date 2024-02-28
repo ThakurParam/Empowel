@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.imageman {
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+  .imageman {
+    display: none;
+  }
+}

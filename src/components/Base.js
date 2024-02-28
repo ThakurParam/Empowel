@@ -19,8 +19,8 @@ export const Base = () => {
                     sx={{
                       color: "#FFFFFF",
                       fontWeight: 700,
-                      fontSize: "45.35px",
-                      lineHeight: "52.73px",
+                      fontSize: { lg: "45.35px", md: "45.35px", xs: "30px" },
+                      lineHeight: { lg: "52.73px", md: "52.73px", xs: "4 0px" },
                       letterSpacing: "-1.44px",
                     }}
                   >
@@ -32,8 +32,8 @@ export const Base = () => {
                     sx={{
                       color: "#FFFFFF",
                       fontWeight: 400,
-                      fontSize: "30.77px",
-                      lineHeight: "46px",
+                      fontSize: { lg: "30.77px", md: "30.77px", xs: "20px" },
+                      lineHeight: { lg: "46px", md: "46px", xs: "30px" },
                       letterSpacing: "-0.24px",
                       opacity: 0.5,
                     }}
@@ -45,7 +45,12 @@ export const Base = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={6} lg={6}>
-              <Box sx={{ textAlign: "end" }}>
+              <Box
+                sx={{
+                  textAlign: { lg: "end", md: "end", xs: "start" },
+                  mt: { lg: 0, md: 0, xs: 5 },
+                }}
+              >
                 <Button
                   sx={{
                     bgcolor: "#896DFF",
@@ -60,8 +65,8 @@ export const Base = () => {
                     sx={{
                       color: "#FFFFFF",
                       fontWeight: 400,
-                      fontSize: "22.64px",
-                      lineHeight: "42.61px",
+                      fontSize: { lg: "22.64px", md: "22.64px", xs: "15px" },
+                      lineHeight: { lg: "42.61px", md: "42.61px", xs: "0px" },
                       letterSpacing: "-0.8px",
                       textAlign: "center",
                     }}

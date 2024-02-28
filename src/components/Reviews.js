@@ -57,8 +57,8 @@ export const Reviews = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "38.35px",
-                      lineHeight: "52.73px",
+                      fontSize: { lg: "38.35px", md: "38.35px", xs: "20px" },
+                      lineHeight: { lg: "52.73px", md: "52.73px", xs: "20px" },
                       letterSpacing: " -1.44px",
                       color: "#000000",
                     }}
@@ -68,7 +68,13 @@ export const Reviews = () => {
                     habitant vulputate facilisis.
                   </Typography>
                   <Box sx={{ textAlign: "center", mt: 5 }}>
-                    <img src={dial} />
+                    <img
+                      src={dial}
+                      style={{
+                        height: "40%",
+                        width: "40%",
+                      }}
+                    />
                   </Box>
                 </Box>
               </SwiperSlide>

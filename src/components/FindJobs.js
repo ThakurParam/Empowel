@@ -17,8 +17,8 @@ export const FindJobs = () => {
               <Typography
                 sx={{
                   fontWeight: 700,
-                  fontSize: "50px",
-                  lineHeight: "59px",
+                  fontSize: { lg: "50px", md: "50px", xs: "40px" },
+                  lineHeight: { lg: "59px", md: "59px", xs: "40px" },
                   letterSpacing: "2%",
                 }}
               >
@@ -27,9 +27,10 @@ export const FindJobs = () => {
               <Typography
                 sx={{
                   fontWeight: 400,
-                  fontSize: "30px",
-                  lineHeight: "48px",
+                  fontSize: { lg: "30px", md: "30px", xs: "20px" },
+                  lineHeight: { lg: "48px", md: "48px", xs: "30px" },
                   letterSpacing: "0.5%",
+                  mt: { xs: 3, md: 0, lg: 0 },
                 }}
               >
                 Get matched with remote, hybrid or on-site jobs that are aligned
@@ -41,7 +42,7 @@ export const FindJobs = () => {
                   <Typography
                     sx={{
                       fontWeight: 700,
-                      fontSize: "30px",
+                      fontSize: { lg: "30px", md: "30px", xs: "15px" },
                       lineHeight: "39.09px",
                       textTransform: "none",
                       color: "white",
