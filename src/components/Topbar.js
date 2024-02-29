@@ -28,7 +28,7 @@ export const Topbar = () => {
             <Grid item md={8} lg={8}>
               <Grid container spacing={12}>
                 <Grid item xs={2} md={2.5} lg={2.5}>
-                  <img src={empowel} />
+                  <img src={empowel} className="imagetop" />
                 </Grid>
                 <Grid
                   item
@@ -140,6 +140,7 @@ export const Topbar = () => {
           sx={{
             display: { xs: "block", md: "block", lg: "none" },
             textAlign: "end",
+            mt: { lg: 0, md: 0, xs: -6 },
           }}
         >
           <div>

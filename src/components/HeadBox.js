@@ -99,7 +99,7 @@ export const HeadBox = () => {
           }}
         />
 
-        <Container maxwidth="xl" sx={{ pt: 30 }}>
+        <Container maxwidth="xl" sx={{ pt: { lg: 30, md: 30, xs: 8 } }}>
           <Box sx={{ textAlign: "center" }}>
             <Typography
               sx={{
@@ -180,7 +180,12 @@ export const HeadBox = () => {
                     {[...Array(6)].map(() => (
                       <Grid item xs={6} md={2} lg={2}>
                         <Card
-                          sx={{ borderRadius: "10px", p: 2, width: "75%   " }}
+                          sx={{
+                            borderRadius: "10px",
+                            p: 2,
+                            width: "75%",
+                            my: { lg: 0, md: 0, xs: 1 },
+                          }}
                         >
                           <Box
                             sx={{
@@ -216,12 +221,25 @@ export const HeadBox = () => {
                     ))}
                   </Grid>
                 </Grid>
-                <Grid item xs={12} md={12} lg={12} sx={{ mt: 3 }}>
+                <Grid
+                  item
+                  xs={12}
+                  md={12}
+                  lg={12}
+                  sx={{
+                    mt: 1,
+                    display: { xs: "none", md: "block", lg: "block" },
+                  }}
+                >
                   <Grid container sapcing={2}>
                     {[...Array(5)].map(() => (
                       <Grid item xs={5} md={2.3} lg={2.3} sx={{ ml: "9.6px" }}>
                         <Card
-                          sx={{ borderRadius: "10px", p: 2, width: "70%   " }}
+                          sx={{
+                            borderRadius: "10px",
+                            p: 2,
+                            width: "70%   ",
+                          }}
                         >
                           <Box
                             sx={{

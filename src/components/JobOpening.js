@@ -15,7 +15,7 @@ import "swiper/css/scrollbar";
 export const JobOpening = () => {
   return (
     <>
-      <Box sx={{ mt: 5 }}>
+      <Box sx={{ mt: { lg: 40, md: 40, xs: 10 }, p: 0.4 }}>
         <Box sx={{ textAlign: "center" }}>
           <Typography
             sx={{
@@ -48,7 +48,11 @@ export const JobOpening = () => {
                     <Grid item xs={12} lg={3} md={3}>
                       <Card
                         elevation={1}
-                        sx={{ borderRadius: "20px", textAlign: "start", p: 5 }}
+                        sx={{
+                          borderRadius: "20px",
+                          textAlign: "start",
+                          p: { lg: 5, md: 5, xs: 2 },
+                        }}
                       >
                         <Box>
                           <img src={company} />
@@ -57,7 +61,7 @@ export const JobOpening = () => {
                           <Typography
                             sx={{
                               fontWeight: 700,
-                              fontSize: "25px",
+                              fontSize: { lg: "25px", md: "25px", xs: "20px" },
                               lineHeight: "29.5px",
                               letterSpacing: "2%",
                               color: "#000000",
@@ -69,8 +73,16 @@ export const JobOpening = () => {
                             <Typography
                               sx={{
                                 fontWeight: 300,
-                                fontSize: "20px",
-                                lineHeight: "25.66px",
+                                fontSize: {
+                                  lg: "20px",
+                                  md: "20px",
+                                  xs: "14px",
+                                },
+                                lineHeight: {
+                                  lg: "25.66px",
+                                  md: "25.66px",
+                                  xs: "20px",
+                                },
                                 letterSpacing: "0.5%",
                                 color: "#000000",
                               }}
@@ -84,7 +96,11 @@ export const JobOpening = () => {
                             <Typography
                               sx={{
                                 fontWeight: 500,
-                                fontSize: "19.44px",
+                                fontSize: {
+                                  lg: "19.44px",
+                                  md: "19.44px",
+                                  xs: "16px",
+                                },
                                 lineHeight: "22.93px",
                                 letterSpacing: "0.2%",
                                 color: "#000000",
@@ -114,15 +130,16 @@ export const JobOpening = () => {
               textTransform: "none",
               bgcolor: "#5A3ED1",
               borderRadius: "72px",
-              padding: "20px",
+              padding: { lg: "20px", md: "20px", xs: "10px" },
               gap: "10px",
               transition: "none",
+              px: { lg: 0, md: 0, xs: 8 },
             }}
           >
             <Typography
               sx={{
                 fontweight: 700,
-                fontSize: "30px",
+                fontSize: { lg: "30px", md: "30px", xs: "20px" },
                 lineHeight: "39.09px",
                 color: "#FFFFFF",
               }}

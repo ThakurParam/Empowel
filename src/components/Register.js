@@ -15,7 +15,13 @@ export const Register = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6} lg={6} sx={{ position: "relative" }}>
-            <Box sx={{ textAlign: "start", mt: { lg: 16, md: 16, xs: 2 } }}>
+            <Box
+              sx={{
+                textAlign: "start",
+                mt: { lg: 16, md: 16, xs: 2 },
+                p: { lg: 0, md: 0, xs: 1 },
+              }}
+            >
               <Box>
                 <Typography
                   sx={{

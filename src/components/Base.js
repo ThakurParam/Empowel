@@ -8,7 +8,7 @@ import instagram from "../images/Baseimage/logo-instagram.png";
 import linkedin from "../images/Baseimage/logo-linkedin.png";
 export const Base = () => {
   return (
-    <Box sx={{ bgcolor: "#161C2D", pt: 15 }}>
+    <Box sx={{ bgcolor: "#161C2D", pt: 15, pb: 5 }}>
       <Container maxWidth="xl">
         <Box>
           <Grid container spacing={2}>
@@ -109,7 +109,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -121,7 +121,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -133,7 +133,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -145,7 +145,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -157,7 +157,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -172,7 +172,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -184,7 +184,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -196,7 +196,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -208,7 +208,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -220,7 +220,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -236,7 +236,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -248,7 +248,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -260,7 +260,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",
@@ -272,7 +272,7 @@ export const Base = () => {
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: "25.37px",
+                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
                       lineHeight: "52px",
                       letterSpacing: "-0.24px",
                       color: "white",

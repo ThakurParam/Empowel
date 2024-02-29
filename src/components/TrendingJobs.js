@@ -64,7 +64,11 @@ export const TrendingJobs = () => {
                                 <Typography
                                   sx={{
                                     fontWeight: 500,
-                                    fontSize: "30px",
+                                    fontSize: {
+                                      lg: "30px",
+                                      md: "30px",
+                                      xs: "25px",
+                                    },
                                     lineHeight: "39.09px",
                                     color: "#000000",
                                   }}
@@ -72,7 +76,7 @@ export const TrendingJobs = () => {
                                   Delivery Person
                                 </Typography>
                               </Box>
-                              <Box>
+                              <Box sx={{ mt: 1 }}>
                                 <ChevronRightOutlinedIcon />
                               </Box>
                             </Box>
@@ -126,7 +130,11 @@ export const TrendingJobs = () => {
                                 <Typography
                                   sx={{
                                     fontWeight: 500,
-                                    fontSize: "30px",
+                                    fontSize: {
+                                      lg: "30px",
+                                      md: "30px",
+                                      xs: "25px",
+                                    },
                                     lineHeight: "39.09px",
                                     color: "#000000",
                                   }}
@@ -134,7 +142,7 @@ export const TrendingJobs = () => {
                                   Delivery Person
                                 </Typography>
                               </Box>
-                              <Box>
+                              <Box sx={{ mt: 1 }}>
                                 <ChevronRightOutlinedIcon />
                               </Box>
                             </Box>
@@ -165,15 +173,16 @@ export const TrendingJobs = () => {
             textTransform: "none",
             bgcolor: "#5A3ED1",
             borderRadius: "72px",
-            padding: "20px",
+            padding: { lg: "20px", md: "20px", xs: "10px" },
             gap: "10px",
             transition: "none",
+            px: { lg: 0, md: 0, xs: 8 },
           }}
         >
           <Typography
             sx={{
               fontweight: 700,
-              fontSize: "30px",
+              fontSize: { lg: "30px", md: "30px", xs: "20px" },
               lineHeight: "39.09px",
               color: "#FFFFFF",
             }}

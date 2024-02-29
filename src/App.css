@@ -43,4 +43,7 @@
   .imageman {
     display: none;
   }
+  .imagetop {
+    height: 70%;
+  }
 }

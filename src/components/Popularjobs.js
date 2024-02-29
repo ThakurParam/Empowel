@@ -36,7 +36,7 @@ export const Popularjobs = () => {
                       <Typography
                         sx={{
                           fontWeight: 500,
-                          fontSize: "25px",
+                          fontSize: { lg: "25px", md: "25px", xs: "20px" },
                           lineHeight: "57.82px",
                           color: "#437C9E",
                         }}
@@ -48,8 +48,12 @@ export const Popularjobs = () => {
                       <Typography
                         sx={{
                           fontWeight: 600,
-                          fontSize: "35px",
-                          lineHeight: "57.82px",
+                          fontSize: { lg: "35px", md: "35px", xs: "25px" },
+                          lineHeight: {
+                            lg: "57.82px",
+                            md: "57.82px",
+                            xs: "10px",
+                          },
                           color: "#000000",
                         }}
                       >
@@ -60,21 +64,27 @@ export const Popularjobs = () => {
                       <Typography
                         sx={{
                           fontWeight: 400,
-                          fontSize: "25.3px",
+                          fontSize: { lg: "25.3px", md: "25.3px", xs: "18px" },
                           lineHeight: "57.82px",
                           color: "#000000",
                         }}
                       >
                         Full Time
                       </Typography>
-                      <Box sx={{ display: "flex", mt: 2 }}>
+                      <Box
+                        sx={{ display: "flex", mt: { lg: 2, md: 2, xs: 0 } }}
+                      >
                         <img src={dollar} style={{ height: "10%" }} />
 
                         <Box sx={{ mt: -1.5, ml: 1.5 }}>
                           <Typography
                             sx={{
                               fontWeight: 400,
-                              fontSize: "25.3px",
+                              fontSize: {
+                                lg: "25.3px",
+                                md: "25.3px",
+                                xs: "20px",
+                              },
                               lineHeight: "57.82px",
                               color: "#000000",
                             }}
@@ -89,7 +99,11 @@ export const Popularjobs = () => {
                           <Typography
                             sx={{
                               fontWeight: 400,
-                              fontSize: "25.3px",
+                              fontSize: {
+                                lg: "25.3px",
+                                md: "25.3px",
+                                xs: "20px",
+                              },
                               lineHeight: "57.82px",
                               color: "#000000",
                             }}

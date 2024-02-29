@@ -38,7 +38,13 @@ export const FindJobs = () => {
                 proposals from the world's fastest growing companies.
               </Typography>
               <Box sx={{ textAlign: "start", mt: 5 }}>
-                <Button sx={{ bgcolor: "#5A3ED1", borderRadius: "15px" }}>
+                <Button
+                  sx={{
+                    bgcolor: "#5A3ED1",
+                    borderRadius: "15px",
+                    px: { lg: 0, md: 0, xs: 8 },
+                  }}
+                >
                   <Typography
                     sx={{
                       fontWeight: 700,
