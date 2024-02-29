@@ -2,6 +2,7 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import bg from "../images/BG.png";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { styled } from "@mui/system";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import dial from "../images/reviewimage/justdial.png";
@@ -11,6 +12,38 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+const CustomPrevButton = styled("div")(({ theme }) => ({
+  position: "absolute",
+  left: 0,
+  top: "50%",
+  transform: "translateY(-50%)",
+  border: "3px solid black",
+
+  borderRadius: "50%",
+  width: "40px",
+  height: "40px",
+  display: "flex",
+  justifyContent: "center",
+  cursor: "pointer",
+}));
+const CustomNextButton = styled("div")(({ theme }) => ({
+  position: "absolute",
+  right: 0,
+  top: "50%",
+  transform: "translateY(-50%)",
+  //   backgroundColor: "rgba(0, 0, 0, 0.5)",
+  border: "3px solid black",
+  borderRadius: "50%",
+  width: "40px",
+  height: "40px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  cursor: "pointer",
+  "&:hover": {
+    // backgroundColor: "rgba(0, 0, 0, 0.7)",
+  },
+}));
 export const Reviews = () => {
   return (
     <>
@@ -39,16 +72,17 @@ export const Reviews = () => {
             EMPLOYER REVIEWS
           </Typography>
         </Box>
-        <Container maxWidth="lg" sx={{ mt: 5 }}>
+        <Container maxWidth="lg" sx={{ mt: 5, position: "relative" }}>
           <Box>
             <Swiper
               // install Swiper modules
               modules={[Navigation]}
               spaceBetween={50}
               slidesPerView={1}
-              navigation
-              //   pagination={{ clickable: true }}
-              //   scrollbar={{ draggable: true }}
+              navigation={{
+                prevEl: ".custom-prev",
+                nextEl: ".custom-next",
+              }}
               onSwiper={(swiper) => console.log(swiper)}
               //   onSlideChange={() => console.log("slide change")}
             >
@@ -83,6 +117,8 @@ export const Reviews = () => {
               <SwiperSlide>Slide 4</SwiperSlide>
             </Swiper>
           </Box>
+          <CustomPrevButton className="custom-prev">{"<"} </CustomPrevButton>
+          <CustomNextButton className="custom-next">{">"} </CustomNextButton>
         </Container>
       </Box>
     </>

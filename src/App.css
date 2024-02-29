@@ -39,6 +39,14 @@
 .imageman {
   display: block;
 }
+.custom-prev {
+  font-size: 30px;
+  font-weight: 700;
+}
+.custom-next {
+  font-size: 30px;
+  font-weight: 700;
+}
 @media only screen and (max-width: 600px) {
   .imageman {
     display: none;

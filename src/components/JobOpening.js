@@ -133,7 +133,7 @@ export const JobOpening = () => {
               padding: { lg: "20px", md: "20px", xs: "10px" },
               gap: "10px",
               transition: "none",
-              px: { lg: 0, md: 0, xs: 8 },
+              px: { lg: 7, md: 0, xs: 8 },
             }}
           >
             <Typography

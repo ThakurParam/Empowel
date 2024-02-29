@@ -125,15 +125,16 @@ export const Popularjobs = () => {
               textTransform: "none",
               bgcolor: "#5A3ED1",
               borderRadius: "72px",
-              padding: "20px",
+              padding: { lg: "20px", md: "20px", xs: "10px" },
               gap: "10px",
               transition: "none",
+              px: { lg: 8, md: 0, xs: 8 },
             }}
           >
             <Typography
               sx={{
                 fontweight: 700,
-                fontSize: "30px",
+                fontSize: { lg: "30px", md: "30px", xs: "20px" },
                 lineHeight: "39.09px",
                 color: "#FFFFFF",
               }}

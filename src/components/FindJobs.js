@@ -42,7 +42,8 @@ export const FindJobs = () => {
                   sx={{
                     bgcolor: "#5A3ED1",
                     borderRadius: "15px",
-                    px: { lg: 0, md: 0, xs: 8 },
+                    px: { lg: 5, md: 0, xs: 8 },
+                    py: { lg: 2, md: 2, xs: 0 },
                   }}
                 >
                   <Typography
