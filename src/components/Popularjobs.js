@@ -23,14 +23,14 @@ export const Popularjobs = () => {
         <Container maxWidth="xl">
           <Box sx={{ mt: 5 }}>
             <Grid container spacing={5}>
-              {[...Array(4)].map(() => (
-                <Grid item xs={12} md={3} lg={3}>
+              {[...Array(4)].map((item, index) => (
+                <Grid item xs={12} md={3} lg={3} key={index}>
                   <Card
                     sx={{ textAlign: "start", p: 4, borderRadius: "20px" }}
                     elevation={2}
                   >
                     <Box>
-                      <img src={logo} />
+                      <img src={logo} alt="logo" />
                     </Box>
                     <Box>
                       <Typography
@@ -74,7 +74,11 @@ export const Popularjobs = () => {
                       <Box
                         sx={{ display: "flex", mt: { lg: 2, md: 2, xs: 0 } }}
                       >
-                        <img src={dollar} style={{ height: "10%" }} />
+                        <img
+                          src={dollar}
+                          alt="dollar"
+                          style={{ height: "10%" }}
+                        />
 
                         <Box sx={{ mt: -1.5, ml: 1.5 }}>
                           <Typography
@@ -94,7 +98,11 @@ export const Popularjobs = () => {
                         </Box>
                       </Box>
                       <Box sx={{ display: "flex" }}>
-                        <img src={globe} style={{ height: "10%" }} />
+                        <img
+                          src={globe}
+                          alt="globe"
+                          style={{ height: "10%" }}
+                        />
                         <Box sx={{ mt: -1.5, ml: 1 }}>
                           <Typography
                             sx={{

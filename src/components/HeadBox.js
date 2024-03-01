@@ -19,6 +19,7 @@ export const HeadBox = () => {
       <Box sx={{ position: "relative" }}>
         <img
           src={left}
+          alt="left"
           style={{
             position: "absolute",
             top: "0%",
@@ -30,6 +31,7 @@ export const HeadBox = () => {
         />
         <img
           src={center}
+          alt="center "
           style={{
             position: "absolute",
             top: "5%",
@@ -40,10 +42,12 @@ export const HeadBox = () => {
         />
         <img
           src={right}
+          alt="right"
           style={{ position: "absolute", top: "0%", right: "0%", zIndex: -1 }}
         />
         <img
           src={img1}
+          alt="first"
           className="imageman"
           style={{
             position: "absolute",
@@ -56,6 +60,7 @@ export const HeadBox = () => {
         />
         <img
           src={img2}
+          alt="second"
           className="imageman"
           style={{
             position: "absolute",
@@ -67,6 +72,7 @@ export const HeadBox = () => {
         />
         <img
           src={img3}
+          alt="third"
           className="imageman"
           style={{
             position: "absolute",
@@ -78,6 +84,7 @@ export const HeadBox = () => {
         />
         <img
           src={img4}
+          alt="fouth"
           className="imageman"
           style={{
             position: "absolute",
@@ -89,6 +96,7 @@ export const HeadBox = () => {
         />
         <img
           src={img5}
+          alt="fifth"
           className="imageman"
           style={{
             position: "absolute",
@@ -177,8 +185,8 @@ export const HeadBox = () => {
               <Grid container spaccing={2}>
                 <Grid item xs={12} md={12} lg={12}>
                   <Grid container sapcing={2}>
-                    {[...Array(6)].map(() => (
-                      <Grid item xs={6} md={2} lg={2}>
+                    {[...Array(6)].map((item, index) => (
+                      <Grid item xs={6} md={2} lg={2} key={index}>
                         <Card
                           sx={{
                             borderRadius: "10px",
@@ -232,8 +240,15 @@ export const HeadBox = () => {
                   }}
                 >
                   <Grid container sapcing={2}>
-                    {[...Array(5)].map(() => (
-                      <Grid item xs={5} md={2.3} lg={2.3} sx={{ ml: "9.6px" }}>
+                    {[...Array(5)].map((item, index) => (
+                      <Grid
+                        item
+                        xs={5}
+                        md={2.3}
+                        lg={2.3}
+                        key={index}
+                        sx={{ ml: "9.6px" }}
+                      >
                         <Card
                           sx={{
                             borderRadius: "10px",

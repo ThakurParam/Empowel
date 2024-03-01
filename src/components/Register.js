@@ -11,7 +11,11 @@ export const Register = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} md={6} lg={6}>
             <Box>
-              <img src={com} style={{ width: "100%", height: "100%" }}></img>
+              <img
+                src={com}
+                alt="com"
+                style={{ width: "100%", height: "100%" }}
+              ></img>
             </Box>
           </Grid>
           <Grid item xs={12} md={6} lg={6} sx={{ position: "relative" }}>
@@ -107,10 +111,12 @@ export const Register = () => {
             <Box>
               <img
                 src={vector1}
+                alt="vector angle"
                 style={{ position: "absolute", bottom: 0, right: 0 }}
               />
               <img
                 src={vector2}
+                alt="second vector "
                 style={{ position: "absolute", right: 0, bottom: 0 }}
               />
             </Box>

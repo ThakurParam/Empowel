@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import bg from "../images/BG.png";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { styled } from "@mui/system";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const CustomPrevButton = styled("div")(({ theme }) => ({
+const CustomPrevButton = styled("div")(() => ({
   position: "absolute",
   left: 0,
   top: "50%",
@@ -24,14 +24,14 @@ const CustomPrevButton = styled("div")(({ theme }) => ({
   height: "40px",
   display: "flex",
   justifyContent: "center",
+  alignItems: "center",
   cursor: "pointer",
 }));
-const CustomNextButton = styled("div")(({ theme }) => ({
+const CustomNextButton = styled("div")(() => ({
   position: "absolute",
   right: 0,
   top: "50%",
   transform: "translateY(-50%)",
-  //   backgroundColor: "rgba(0, 0, 0, 0.5)",
   border: "3px solid black",
   borderRadius: "50%",
   width: "40px",
@@ -40,9 +40,7 @@ const CustomNextButton = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   cursor: "pointer",
-  "&:hover": {
-    // backgroundColor: "rgba(0, 0, 0, 0.7)",
-  },
+  "&:hover": {},
 }));
 export const Reviews = () => {
   return (
@@ -104,9 +102,11 @@ export const Reviews = () => {
                   <Box sx={{ textAlign: "center", mt: 5 }}>
                     <img
                       src={dial}
+                      alt="di"
                       style={{
                         height: "40%",
                         width: "40%",
+                        background: "transparent",
                       }}
                     />
                   </Box>

@@ -44,8 +44,8 @@ export const JobOpening = () => {
             <SwiperSlide>
               <Box sx={{ mt: 2, mb: 2, ml: 2, mr: 2 }}>
                 <Grid container spacing={4}>
-                  {[...Array(4)].map(() => (
-                    <Grid item xs={12} lg={3} md={3}>
+                  {[...Array(4)].map((item, index) => (
+                    <Grid item xs={12} lg={3} md={3} key={index}>
                       <Card
                         elevation={1}
                         sx={{
@@ -55,7 +55,7 @@ export const JobOpening = () => {
                         }}
                       >
                         <Box>
-                          <img src={company} />
+                          <img src={company} alt="company" />
                         </Box>
                         <Box sx={{ mt: 5 }}>
                           <Typography

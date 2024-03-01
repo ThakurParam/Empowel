@@ -85,9 +85,10 @@ export const Base = () => {
             <Grid container spacing={2}>
               <Grid item xs={12} md={3} lg={4}>
                 <Box sx={{ position: "relative", textAlign: "start" }}>
-                  <img src={empowel} />
+                  <img src={empowel} alt="empowel" />
                   <img
                     src={m}
+                    alt="m"
                     style={{ position: "absolute", top: -22, left: 24 }}
                   />
                 </Box>
@@ -98,10 +99,22 @@ export const Base = () => {
                     mt: 4,
                   }}
                 >
-                  <img src={twitter} />
-                  <img src={facebook} style={{ marginLeft: "35px" }} />
-                  <img src={instagram} style={{ marginLeft: "35px" }} />
-                  <img src={linkedin} style={{ marginLeft: "35px" }} />
+                  <img src={twitter} alt="twitter" />
+                  <img
+                    src={facebook}
+                    alt="facebook"
+                    style={{ marginLeft: "35px" }}
+                  />
+                  <img
+                    src={instagram}
+                    alt="instagram"
+                    style={{ marginLeft: "35px" }}
+                  />
+                  <img
+                    src={linkedin}
+                    alt="linkedin"
+                    style={{ marginLeft: "35px" }}
+                  />
                 </Box>
               </Grid>
               <Grid item xs={12} md={3} lg={2.5}>
