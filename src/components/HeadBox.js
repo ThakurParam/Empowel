@@ -1,22 +1,243 @@
-import { Avatar, Box, Card, Container, Grid, Typography } from "@mui/material";
-import React from "react";
-import { InputBase, IconButton } from "@mui/material";
-import TroubleshootIcon from "@mui/icons-material/Troubleshoot";
-import left from "../images/Headboximage/Ellipse left.png";
-import center from "../images/Headboximage/centerimage.png";
-import right from "../images/Headboximage/Ellipse right.png";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import img1 from "../images/Headboximage/Ellipse 3.png";
-import img2 from "../images/Headboximage/Ellipse 4.png";
-import img3 from "../images/Headboximage/Ellipse 5.png";
-import img4 from "../images/Headboximage/Ellipse 6.png";
-import img5 from "../images/Headboximage/Ellipse 7.png";
+import {
+  Avatar,
+  Box,
+  Button,
+  Card,
+  CardActionArea,
+  CardContent,
+  Container,
+  Grid,
+  Stack,
+  Typography,
+} from '@mui/material';
+import React from 'react';
+import { InputBase, IconButton } from '@mui/material';
+import TroubleshootIcon from '@mui/icons-material/Troubleshoot';
+import left from '../images/Headboximage/Ellipse left.png';
+import center from '../images/Headboximage/centerimage.png';
+import right from '../images/Headboximage/Ellipse right.png';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import img1 from '../images/Headboximage/Ellipse 3.png';
+import img2 from '../images/Headboximage/Ellipse 4.png';
+import img3 from '../images/Headboximage/Ellipse 5.png';
+import img4 from '../images/Headboximage/Ellipse 6.png';
+import img5 from '../images/Headboximage/Ellipse 7.png';
+import {
+  ArrowForward,
+  ArrowForwardIosRounded,
+  HomeOutlined,
+  OnlinePredictionOutlined,
+  TroubleshootRounded,
+} from '@mui/icons-material';
+import {
+  blue,
+  green,
+  grey,
+  orange,
+  purple,
+  yellow,
+} from '@mui/material/colors';
+import IconCard from '../ui/icon-card';
+
+const cards = [
+  {
+    title: 'Remote',
+    color: purple[50],
+    icon: <HomeOutlined />,
+  },
+  {
+    title: 'MNC',
+    color: green[50],
+  },
+  {
+    title: 'Startup',
+    color: orange[50],
+    icon: <OnlinePredictionOutlined />,
+  },
+  {
+    title: 'HR',
+    color: blue[50],
+  },
+  {
+    title: 'Supply Chain',
+    color: yellow[50],
+  },
+];
+const cards2 = [
+  {
+    title: 'Remote',
+    color: purple[50],
+    icon: <HomeOutlined />,
+  },
+  {
+    title: 'MNC',
+    color: green[50],
+  },
+  {
+    title: 'Startup',
+    color: orange[50],
+    icon: <OnlinePredictionOutlined />,
+  },
+  {
+    title: 'HR',
+    color: blue[50],
+  },
+];
 
 export const HeadBox = () => {
   return (
-    <>
-      <Box sx={{ position: "relative" }}>
+    <Box
+      sx={{
+        textAlign: 'center',
+        minHeight: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        backgroundImage: 'url("/images/herobar/centerimage.png")',
+        ':before': {
+          content: '""',
+          background: 'url("/images/herobar/Ellipse left.png")',
+          position: 'absolute',
+          width: 1,
+          height: '100%',
+          top: 0,
+          left: 0,
+          backgroundRepeat: 'no-repeat',
+          zIndex: -1,
+        },
+        ':after': {
+          content: '""',
+          background: 'url("/images/herobar/Ellipse right.png")',
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          top: 0,
+          right: 0,
+          backgroundRepeat: 'no-repeat',
+          zIndex: -1,
+        },
+      }}
+    >
+      <Container>
+        <Typography variant="h1" component={'h1'} mb={1}>
+          Find global Jobs & talent
+        </Typography>
+        <Typography variant="h5" component={'h5'} mb={2}>
+          Over 5,00,000+jobs to explore
+        </Typography>
+        <Box
+          sx={{
+            maxWidth: 800,
+            boxShadow: '0px 0px 25px rgb(0,0,0,0.2)',
+            bgcolor: '#fff',
+
+            borderRadius: 10,
+            mx: 'auto',
+            py: 1,
+            px: 2,
+            '.icon': {
+              height: 2,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              svg: { color: grey[500], fontSize: 32 },
+            },
+            '.sec': {
+              '+.sec': {
+                borderLeft: '1px solid #E0E0E0',
+                pl: 2,
+              },
+              flexGrow: 1,
+              input: {
+                border: 'none',
+                ':focus': {
+                  outline: 'none',
+                },
+                width: 1,
+                fontSize: 15,
+              },
+              select: {
+                border: 'none',
+                ':focus': {
+                  outline: 'none',
+                },
+                color: grey[700],
+                fontSize: 15,
+              },
+            },
+            '.loction': {
+              maxWidth: 150,
+              flexGrow: 'unset',
+              display: { md: 'block', xs: 'none' },
+            },
+            '.btn': {
+              borderRadius: 10,
+              px: 4,
+              border: 0,
+              py: 1,
+              boxShadow: 0,
+              textTransform: 'capitalize',
+            },
+          }}
+        >
+          <Stack direction={'row'} alignItems={'center'} spacing={1}>
+            <Box className="icon">
+              <TroubleshootRounded />
+            </Box>
+            <Box className="input sec">
+              <input
+                type="text"
+                placeholder="Enter skills/designation/companies"
+              />
+            </Box>
+            <Box className="select sec">
+              <select name="" id="">
+                <option value="1" selected disabled>
+                  Select Experience
+                </option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+              </select>
+            </Box>
+            <Box className="loction sec">
+              <input type="text" placeholder="Loction" />
+            </Box>
+            <Box className="button">
+              <Button variant="contained" className="btn">
+                search
+              </Button>
+            </Box>
+          </Stack>
+        </Box>
+        <Stack
+          direction={'row'}
+          justifyContent={'center'}
+          flexWrap={'wrap'}
+          mt={7}
+        >
+          {cards.map((card, index) => (
+            <IconCard
+              title={card?.title}
+              bgcolor={card?.color}
+              key={index}
+              icon={card?.icon}
+            />
+          ))}
+        </Stack>
+        <Stack direction={'row'} justifyContent={'center'} flexWrap={'wrap'}>
+          {cards2.map((card, index) => (
+            <IconCard
+              title={card?.title}
+              bgcolor={card?.color}
+              key={index}
+              icon={card?.icon}
+            />
+          ))}
+        </Stack>
+      </Container>
+      {/* <Box sx={{ position: "relative" }}>
         <img
           src={left}
           alt="left"
@@ -294,7 +515,7 @@ export const HeadBox = () => {
             </Box>
           </Container>
         </Box>
-      </Box>
-    </>
+      </Box> */}
+    </Box>
   );
 };
