@@ -38,10 +38,10 @@ export const TrendingJobs = () => {
                   <Grid item xs={12} md={3} lg={3} key={index}>
                     <Paper
                       elevation={5}
-                      sx={{ mt: 5, p: 3, borderRadius: "15px", width: "80%" }}
+                      sx={{ mt: 5, p: 2, borderRadius: "15px", width: "80%" }}
                     >
                       <Grid container spacing={2}>
-                        <Grid item xs={2} md={2} lg={3}>
+                        <Grid item xs={2} md={2} lg={2}>
                           <Box>
                             <Avatar
                               sx={{
@@ -49,6 +49,7 @@ export const TrendingJobs = () => {
                                 height: "90%",
                                 p: 1,
                                 bgcolor: "#FAF3FF",
+                                mt: 1,
                               }}
                             >
                               <HomeOutlinedIcon
@@ -104,21 +105,22 @@ export const TrendingJobs = () => {
                   <Grid item xs={12} md={3} lg={3} key={index}>
                     <Paper
                       elevation={5}
-                      sx={{ mt: 5, p: 3, width: "80%", borderRadius: "15px" }}
+                      sx={{ mt: 5, p: 2, borderRadius: "15px", width: "80%" }}
                     >
                       <Grid container spacing={2}>
                         <Grid item xs={2} md={2} lg={2}>
                           <Box>
                             <Avatar
                               sx={{
-                                width: "30%",
-                                height: "30%",
+                                width: "90%",
+                                height: "90%",
                                 p: 1,
                                 bgcolor: "#FAF3FF",
+                                mt: 1,
                               }}
                             >
                               <HomeOutlinedIcon
-                                sx={{ fontSize: "50px", color: "black" }}
+                                sx={{ fontSize: "35px", color: "black" }}
                               />
                             </Avatar>
                           </Box>

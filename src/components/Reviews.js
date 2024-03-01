@@ -6,11 +6,11 @@ import { styled } from "@mui/system";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import dial from "../images/reviewimage/justdial.png";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { ChevronLeftRounded, ChevronRightRounded } from "@mui/icons-material";
 
 const CustomPrevButton = styled("div")(() => ({
   position: "absolute",
@@ -26,6 +26,7 @@ const CustomPrevButton = styled("div")(() => ({
   justifyContent: "center",
   alignItems: "center",
   cursor: "pointer",
+  ".custom-prev": { fontSize: "30px", fontWeight: 700 },
 }));
 const CustomNextButton = styled("div")(() => ({
   position: "absolute",
@@ -40,7 +41,7 @@ const CustomNextButton = styled("div")(() => ({
   justifyContent: "center",
   alignItems: "center",
   cursor: "pointer",
-  "&:hover": {},
+  ".custom-next": { fontSize: "30px", fontWeight: 700 },
 }));
 export const Reviews = () => {
   return (
@@ -56,24 +57,9 @@ export const Reviews = () => {
           mt: 8,
         }}
       >
-        <Box sx={{ textAlign: "center" }}>
-          <Typography
-            sx={{
-              fontWeight: 700,
-              fontSize: "30px",
-              lineHeight: "36.27px",
-              letterSpacing: "1.95px",
-              color: "#000000",
-              wordSpacing: "5px",
-            }}
-          >
-            EMPLOYER REVIEWS
-          </Typography>
-        </Box>
-        <Container maxWidth="lg" sx={{ mt: 5, position: "relative" }}>
+        <Container maxWidth="lg" sx={{ mt: 3, position: "relative" }}>
           <Box>
             <Swiper
-              // install Swiper modules
               modules={[Navigation]}
               spaceBetween={50}
               slidesPerView={1}
@@ -85,11 +71,25 @@ export const Reviews = () => {
               //   onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
-                <Box>
+                <Box sx={{ textAlign: "center" }}>
+                  <Typography
+                    sx={{
+                      fontWeight: 700,
+                      fontSize: { lg: "30px", md: "30px", xs: "20px" },
+                      lineHeight: "36.27px",
+                      letterSpacing: "1.95px",
+                      color: "#000000",
+                      wordSpacing: "5px",
+                    }}
+                  >
+                    EMPLOYER REVIEWS
+                  </Typography>
+                </Box>
+                <Box sx={{ width: { xs: "70%" }, mx: "auto", mt: 2 }}>
                   <Typography
                     sx={{
                       fontWeight: 400,
-                      fontSize: { lg: "38.35px", md: "38.35px", xs: "20px" },
+                      fontSize: { lg: "38.35px", md: "38.35px", xs: "15px" },
                       lineHeight: { lg: "52.73px", md: "52.73px", xs: "20px" },
                       letterSpacing: " -1.44px",
                       color: "#000000",
@@ -106,7 +106,6 @@ export const Reviews = () => {
                       style={{
                         height: "40%",
                         width: "40%",
-                        background: "transparent",
                       }}
                     />
                   </Box>
@@ -117,8 +116,12 @@ export const Reviews = () => {
               <SwiperSlide>Slide 4</SwiperSlide>
             </Swiper>
           </Box>
-          <CustomPrevButton className="custom-prev">{"<"} </CustomPrevButton>
-          <CustomNextButton className="custom-next">{">"} </CustomNextButton>
+          <CustomPrevButton className="custom-prev">
+            <ChevronLeftRounded />
+          </CustomPrevButton>
+          <CustomNextButton className="custom-next">
+            <ChevronRightRounded />
+          </CustomNextButton>
         </Container>
       </Box>
     </>
