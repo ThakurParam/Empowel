@@ -91,6 +91,8 @@ export const HeadBox = () => {
       sx={{
         textAlign: 'center',
         minHeight: '100vh',
+        width: '100%',
+        overflowX: 'hidden',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -110,6 +112,7 @@ export const HeadBox = () => {
         ':after': {
           content: '""',
           background: 'url("/images/herobar/Ellipse right.png")',
+          backgroundSize: 'cover',
           position: 'absolute',
           width: '100%',
           height: '100%',
