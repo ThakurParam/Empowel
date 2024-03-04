@@ -1,31 +1,7 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardActionArea,
-  CardContent,
-  Container,
-  Grid,
-  Stack,
-  Typography,
-} from '@mui/material';
+import { Box, Button, Container, Stack, Typography } from '@mui/material';
 import React from 'react';
-import { InputBase, IconButton } from '@mui/material';
-import TroubleshootIcon from '@mui/icons-material/Troubleshoot';
-import left from '../images/Headboximage/Ellipse left.png';
-import center from '../images/Headboximage/centerimage.png';
-import right from '../images/Headboximage/Ellipse right.png';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import img1 from '../images/Headboximage/Ellipse 3.png';
-import img2 from '../images/Headboximage/Ellipse 4.png';
-import img3 from '../images/Headboximage/Ellipse 5.png';
-import img4 from '../images/Headboximage/Ellipse 6.png';
-import img5 from '../images/Headboximage/Ellipse 7.png';
+
 import {
-  ArrowForward,
-  ArrowForwardIosRounded,
   HomeOutlined,
   OnlinePredictionOutlined,
   TroubleshootRounded,

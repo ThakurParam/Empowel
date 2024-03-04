@@ -1,198 +1,54 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import React from "react";
-import ellipse from "../images/trending0.png";
-import { Avatar, Paper } from "@mui/material";
+import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material';
+import React from 'react';
+import ellipse from '../images/trending0.png';
 
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
+import TrendingCard from '../ui/trending-card';
 
 export const TrendingJobs = () => {
   return (
     <Box
       sx={{
+        py: 10,
         backgroundImage: `url(${ellipse})`,
+        backgroundPosition: ' center right',
+        backgroundRepeat: 'no-repeat',
 
-        backgroundPosition: " center right",
-        backgroundRepeat: "no-repeat",
-        p: 2,
+        h2: {
+          mb: 4,
+        },
+
+        '.btn': {
+          borderRadius: 10,
+          px: 4,
+          border: 0,
+          mt: 4,
+          py: 1,
+          boxShadow: 0,
+          textTransform: 'capitalize',
+          fontSize: '20px',
+        },
+        '.button': {
+          mt: 5,
+        },
       }}
     >
-      <Box sx={{ textAlign: "center", mt: 5 }}>
-        <Typography
-          sx={{
-            fontweight: 700,
-            fontSize: { lg: "50px", md: "50px", xs: "40px" },
-            lineHeight: { lg: "65.15px", md: "65.15px", xs: "50px" },
-            color: "#000000",
-          }}
-        >
+      <Container>
+        <Typography variant="h2" component="h2" textAlign={'center'}>
           Trending Job Role on Empowel
         </Typography>
-      </Box>
-      <Container maxWidth="xl" sx={{ mt: 2 }}>
-        <Box>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={12} lg={12}>
-              <Grid container sapcing={1}>
-                {[...Array(4)].map((item, index) => (
-                  <Grid item xs={12} md={3} lg={3} key={index}>
-                    <Paper
-                      elevation={5}
-                      sx={{ mt: 5, p: 2, borderRadius: "15px", width: "80%" }}
-                    >
-                      <Grid container spacing={2}>
-                        <Grid item xs={2} md={2} lg={2}>
-                          <Box>
-                            <Avatar
-                              sx={{
-                                width: "90%",
-                                height: "90%",
-                                p: 1,
-                                bgcolor: "#FAF3FF",
-                                mt: 1,
-                              }}
-                            >
-                              <HomeOutlinedIcon
-                                sx={{ fontSize: "35px", color: "black" }}
-                              />
-                            </Avatar>
-                          </Box>
-                        </Grid>
-                        <Grid item xs={10} md={10} lg={10}>
-                          <Box sx={{ textAlign: "start" }}>
-                            <Box sx={{ display: "flex" }}>
-                              <Box>
-                                <Typography
-                                  sx={{
-                                    fontWeight: 500,
-                                    fontSize: {
-                                      lg: "30px",
-                                      md: "30px",
-                                      xs: "25px",
-                                    },
-                                    lineHeight: "39.09px",
-                                    color: "#000000",
-                                  }}
-                                >
-                                  Delivery Person
-                                </Typography>
-                              </Box>
-                              <Box sx={{ mt: 1 }}>
-                                <ChevronRightOutlinedIcon />
-                              </Box>
-                            </Box>
-                            <Typography
-                              sx={{
-                                fontWeight: 300,
-                                fontSize: "25px",
-                                lineHeight: "32.57px",
-                                color: "#000000",
-                              }}
-                            >
-                              279 openings
-                            </Typography>
-                          </Box>
-                        </Grid>
-                      </Grid>
-                    </Paper>
-                  </Grid>
-                ))}
-              </Grid>
+        <Grid container spacing={1.5}>
+          {[...Array(8)].map((item, index) => (
+            <Grid item md={3} xs={12} sm={6} key={index}>
+              <TrendingCard />
             </Grid>
-            <Grid item xs={12} md={12} lg={12}>
-              <Grid container sapcing={2}>
-                {[...Array(4)].map((item, index) => (
-                  <Grid item xs={12} md={3} lg={3} key={index}>
-                    <Paper
-                      elevation={5}
-                      sx={{ mt: 5, p: 2, borderRadius: "15px", width: "80%" }}
-                    >
-                      <Grid container spacing={2}>
-                        <Grid item xs={2} md={2} lg={2}>
-                          <Box>
-                            <Avatar
-                              sx={{
-                                width: "90%",
-                                height: "90%",
-                                p: 1,
-                                bgcolor: "#FAF3FF",
-                                mt: 1,
-                              }}
-                            >
-                              <HomeOutlinedIcon
-                                sx={{ fontSize: "35px", color: "black" }}
-                              />
-                            </Avatar>
-                          </Box>
-                        </Grid>
-                        <Grid item xs={10} md={10} lg={10}>
-                          <Box sx={{ textAlign: "start" }}>
-                            <Box sx={{ display: "flex" }}>
-                              <Box>
-                                <Typography
-                                  sx={{
-                                    fontWeight: 500,
-                                    fontSize: {
-                                      lg: "30px",
-                                      md: "30px",
-                                      xs: "25px",
-                                    },
-                                    lineHeight: "39.09px",
-                                    color: "#000000",
-                                  }}
-                                >
-                                  Delivery Person
-                                </Typography>
-                              </Box>
-                              <Box sx={{ mt: 1 }}>
-                                <ChevronRightOutlinedIcon />
-                              </Box>
-                            </Box>
-                            <Typography
-                              sx={{
-                                fontWeight: 300,
-                                fontSize: "25px",
-                                lineHeight: "32.57px",
-                                color: "#000000",
-                              }}
-                            >
-                              279 openings
-                            </Typography>
-                          </Box>
-                        </Grid>
-                      </Grid>
-                    </Paper>
-                  </Grid>
-                ))}
-              </Grid>
-            </Grid>
-          </Grid>
+          ))}
+        </Grid>
+        <Box textAlign={'center'}>
+          <Button variant="contained" className="btn">
+            view all
+          </Button>
         </Box>
       </Container>
-      <Box sx={{ mb: 5, mt: 10 }}>
-        <Button
-          sx={{
-            textTransform: "none",
-            bgcolor: "#5A3ED1",
-            borderRadius: "72px",
-            padding: { lg: "20px", md: "20px", xs: "10px" },
-            gap: "10px",
-            transition: "none",
-            px: { lg: 8, md: 0, xs: 8 },
-          }}
-        >
-          <Typography
-            sx={{
-              fontweight: 700,
-              fontSize: { lg: "30px", md: "30px", xs: "20px" },
-              lineHeight: "39.09px",
-              color: "#FFFFFF",
-            }}
-          >
-            View All
-          </Typography>
-        </Button>
-      </Box>
     </Box>
   );
 };

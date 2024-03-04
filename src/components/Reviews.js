@@ -68,33 +68,15 @@ export const Reviews = () => {
                 nextEl: ".custom-next",
               }}
               onSwiper={(swiper) => console.log(swiper)}
-              //   onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
                 <Box sx={{ textAlign: "center" }}>
-                  <Typography
-                    sx={{
-                      fontWeight: 700,
-                      fontSize: { lg: "30px", md: "30px", xs: "20px" },
-                      lineHeight: "36.27px",
-                      letterSpacing: "1.95px",
-                      color: "#000000",
-                      wordSpacing: "5px",
-                    }}
-                  >
+                  <Typography variant="h3" component="h3">
                     EMPLOYER REVIEWS
                   </Typography>
                 </Box>
                 <Box sx={{ width: { xs: "70%" }, mx: "auto", mt: 2 }}>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "38.35px", md: "38.35px", xs: "15px" },
-                      lineHeight: { lg: "52.73px", md: "52.73px", xs: "20px" },
-                      letterSpacing: " -1.44px",
-                      color: "#000000",
-                    }}
-                  >
+                  <Typography variant="h4" component="h4">
                     Imperdiet amet consequat in magnis vitae ullamcorper porta
                     purus. Nisl netus scelerisque sed ultrices nibh quam
                     habitant vulputate facilisis.
