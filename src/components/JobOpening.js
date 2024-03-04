@@ -80,7 +80,6 @@ export const JobOpening = () => {
           }}
         >
           <Swiper
-            // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             slidesPerView={1}
