@@ -7,6 +7,7 @@ import { TrendingJobs } from '../../components/TrendingJobs';
 import { Register } from '../../components/Register';
 import { Popularjobs } from '../../components/Popularjobs';
 import { Reviews } from '../../components/Reviews';
+import TopCompaniesHiring from '../../components/TopCompaniesHiring';
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <TrendingJobs />
       <Register />
       <Popularjobs />
+      <TopCompaniesHiring />
       <Reviews />
     </Layout>
   );

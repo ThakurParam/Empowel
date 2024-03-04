@@ -18,6 +18,26 @@ export const arrowBtn = {
   },
 };
 
+export const arrowBtnSlider = {
+  position: 'absolute',
+  zIndex: 999,
+  top: '50%',
+  border: '2px solid #000',
+  color: '#000',
+  '&.swiper-button-disabled': {
+    opacity: 0.5,
+    cursor: 'default',
+  },
+  '&.prev': {
+    left: { xs: 0, md: -30 },
+    transform: 'translate(-50%, -50%)',
+  },
+  '&.next': {
+    right: { xs: 0, md: -30 },
+    transform: 'translate(50%, -50%)',
+  },
+};
+
 export const fxTitle = {
   ':after': {
     content: '""',
