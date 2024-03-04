@@ -4,7 +4,23 @@ import jobs from "../images/jobs.png";
 
 export const FindJobs = () => {
   return (
-    <Box sx={{ mt: 5 }}>
+    <Box
+      sx={{
+        mt: 5,
+        ".btn": {
+          borderRadius: 10,
+          px: 4,
+          border: 0,
+          py: 1,
+          boxShadow: 0,
+          textTransform: "capitalize",
+          fontSize: "20px",
+        },
+        ".button": {
+          mt: 5,
+        },
+      }}
+    >
       <Container maxWidth="xl">
         <Grid container spacing={10}>
           <Grid item xs={12} md={6} lg={6}>
@@ -18,51 +34,19 @@ export const FindJobs = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <Box sx={{ textAlign: "start", mt: 7 }}>
-              <Typography
-                sx={{
-                  fontWeight: 700,
-                  fontSize: { lg: "50px", md: "50px", xs: "40px" },
-                  lineHeight: { lg: "59px", md: "59px", xs: "40px" },
-                  letterSpacing: "2%",
-                }}
-              >
+              <Typography variant="h1" component="h1">
                 Find jobs with employers across the globe
               </Typography>
-              <Typography
-                sx={{
-                  fontWeight: 400,
-                  fontSize: { lg: "30px", md: "30px", xs: "20px" },
-                  lineHeight: { lg: "48px", md: "48px", xs: "30px" },
-                  letterSpacing: "0.5%",
-                  mt: { xs: 3, md: 0, lg: 0 },
-                }}
-              >
+              <Typography variant="h4" component="h4">
                 Get matched with remote, hybrid or on-site jobs that are aligned
                 with your experience, goals & preferences and receive job
                 proposals from the world's fastest growing companies.
               </Typography>
-              <Box sx={{ textAlign: "start", mt: 5 }}>
-                <Button
-                  sx={{
-                    bgcolor: "#5A3ED1",
-                    borderRadius: "15px",
-                    px: { lg: 5, md: 0, xs: 8 },
-                    py: { lg: 2, md: 2, xs: 0 },
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      fontWeight: 700,
-                      fontSize: { lg: "30px", md: "30px", xs: "15px" },
-                      lineHeight: "39.09px",
-                      textTransform: "none",
-                      color: "white",
-                    }}
-                  >
-                    Submit your CV
-                  </Typography>
+              <Box className="button">
+                <Button variant="contained" className="btn">
+                  submit your CV
                 </Button>
-              </Box>
+              </Box>{" "}
             </Box>
           </Grid>
         </Grid>

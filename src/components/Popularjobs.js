@@ -1,27 +1,59 @@
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  Container,
+  Grid,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import dollar from "../images/popjobs/dollar.png";
 import globe from "../images/popjobs/global.png";
 import logo from "../images/popjobs/logo.png";
+import PopularCard from "../ui/popular-card";
 
 export const Popularjobs = () => {
   return (
     <>
-      <Box sx={{ mt: 5 }}>
+      <Box
+        sx={{
+          mt: 5,
+          ".btn": {
+            borderRadius: 10,
+            px: 4,
+            border: 0,
+            py: 1,
+            boxShadow: 0,
+            textTransform: "capitalize",
+            fontSize: "20px",
+          },
+          ".button": {
+            mt: 5,
+          },
+          ".containerstack": {
+            alignItems: "center",
+            justifyContent: "center",
+          },
+        }}
+      >
         <Box sx={{ textAlign: "center" }}>
-          <Typography
-            sx={{
-              fontWeight: 700,
-              fontSize: "50px",
-              lineHeight: "65.15px",
-              color: "#000000",
-            }}
-          >
+          <Typography variant="h1" component="h1">
             Popular Jobs
           </Typography>
         </Box>
-        <Container maxWidth="xl">
-          <Box sx={{ mt: 5 }}>
+        <Container maxWidth="xl" sx={{ mt: 8 }}>
+          <Stack
+            direction={"row"}
+            flexWrap={"wrap"}
+            spacing={3}
+            className="containerstack"
+          >
+            {[...Array(4)].map((item, index) => (
+              <PopularCard />
+            ))}
+          </Stack>
+          {/* <Box sx={{ mt: 5 }}>
             <Grid container spacing={5}>
               {[...Array(4)].map((item, index) => (
                 <Grid item xs={12} md={3} lg={3} key={index}>
@@ -125,30 +157,11 @@ export const Popularjobs = () => {
                 </Grid>
               ))}
             </Grid>
-          </Box>
+          </Box> */}
         </Container>
-        <Box sx={{ mt: 5 }}>
-          <Button
-            sx={{
-              textTransform: "none",
-              bgcolor: "#5A3ED1",
-              borderRadius: "72px",
-              padding: { lg: "20px", md: "20px", xs: "10px" },
-              gap: "10px",
-              transition: "none",
-              px: { lg: 8, md: 0, xs: 8 },
-            }}
-          >
-            <Typography
-              sx={{
-                fontweight: 700,
-                fontSize: { lg: "30px", md: "30px", xs: "20px" },
-                lineHeight: "39.09px",
-                color: "#FFFFFF",
-              }}
-            >
-              View All
-            </Typography>
+        <Box className="button">
+          <Button variant="contained" className="btn">
+            view all
           </Button>
         </Box>
       </Box>
