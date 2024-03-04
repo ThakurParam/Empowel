@@ -1,17 +1,8 @@
-import {
-  Box,
-  Button,
-  Card,
-  Container,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import dollar from "../images/popjobs/dollar.png";
 import globe from "../images/popjobs/global.png";
 import logo from "../images/popjobs/logo.png";
-import PopularCard from "../ui/popular-card";
 
 export const Popularjobs = () => {
   return (
@@ -43,7 +34,7 @@ export const Popularjobs = () => {
           </Typography>
         </Box>
         <Container maxWidth="xl" sx={{ mt: 8 }}>
-          <Stack
+          {/* <Stack
             direction={"row"}
             flexWrap={"wrap"}
             spacing={3}
@@ -52,8 +43,8 @@ export const Popularjobs = () => {
             {[...Array(4)].map((item, index) => (
               <PopularCard />
             ))}
-          </Stack>
-          {/* <Box sx={{ mt: 5 }}>
+          </Stack> */}
+          <Box sx={{ mt: 5 }}>
             <Grid container spacing={5}>
               {[...Array(4)].map((item, index) => (
                 <Grid item xs={12} md={3} lg={3} key={index}>
@@ -157,7 +148,7 @@ export const Popularjobs = () => {
                 </Grid>
               ))}
             </Grid>
-          </Box> */}
+          </Box>
         </Container>
         <Box className="button">
           <Button variant="contained" className="btn">

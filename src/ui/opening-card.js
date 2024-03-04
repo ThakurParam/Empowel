@@ -1,7 +1,4 @@
-import {
-  KeyboardArrowRightRounded,
-  Timer10SelectOutlined,
-} from "@mui/icons-material";
+import { KeyboardArrowRightRounded } from "@mui/icons-material";
 import { Box, Card, CardActionArea, Stack, Typography } from "@mui/material";
 import React from "react";
 

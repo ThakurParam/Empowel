@@ -1,15 +1,5 @@
-import {
-  Box,
-  Button,
-  Card,
-  Container,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import company from "../images/company.png";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
@@ -60,8 +50,7 @@ export const JobOpening = () => {
         sx={{
           mt: { lg: 40, md: 40, xs: 10 },
           p: 0.4,
-          // ".custom-prev": {},
-          // ".custom-next": {},
+
           ".btn": {
             borderRadius: 10,
             px: 4,
@@ -105,7 +94,7 @@ export const JobOpening = () => {
               <Container maxWidth="xl">
                 <Stack direction={"row"} spacing={2}>
                   {[...Array(4)].map((item, index) => (
-                    <OpeningCard />
+                    <OpeningCard key={index} />
                   ))}
                 </Stack>
               </Container>

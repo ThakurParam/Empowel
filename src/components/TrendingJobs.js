@@ -1,10 +1,7 @@
-import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import ellipse from "../images/trending0.png";
-import { Avatar, Paper } from "@mui/material";
 
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import TrendingCard from "../ui/trending-card";
 
 export const TrendingJobs = () => {
@@ -42,12 +39,12 @@ export const TrendingJobs = () => {
       <Container maxWidth="xl" sx={{ mt: 5 }}>
         <Stack direction={"row"} flexWrap={"wrap"} className="containerstack">
           {[...Array(4)].map((item, index) => (
-            <TrendingCard />
+            <TrendingCard key={index} />
           ))}
         </Stack>
         <Stack direction={"row"} flexWrap={"wrap"} className="containerstack">
           {[...Array(4)].map((item, index) => (
-            <TrendingCard />
+            <TrendingCard key={index} />
           ))}
         </Stack>
       </Container>
