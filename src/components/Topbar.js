@@ -43,6 +43,9 @@ export const Topbar = () => {
         ".btn-sign": {
           color: "white",
         },
+        ".menuitem": {
+          borderRadius: 3,
+        },
       }}
     >
       <Container>
@@ -63,20 +66,20 @@ export const Topbar = () => {
             sx={{ display: { md: "block", xs: "none" } }}
           >
             <Stack direction={"row"}>
-              <List>
-                <MenuItem>Find Jobs</MenuItem>
-              </List>
-              <List>
-                <MenuItem>Employers</MenuItem>
-              </List>
-              <List>
-                <MenuItem>Mentor</MenuItem>
-              </List>
-              <List>
-                <MenuItem>Companies</MenuItem>
-              </List>
-              <List>
-                <MenuItem>Blog </MenuItem>
+              <List
+                sx={{
+                  display: "flex",
+                }}
+              >
+                <MenuItem className="menuitem">Find Jobs</MenuItem>
+
+                <MenuItem className="menuitem">Employers</MenuItem>
+
+                <MenuItem className="menuitem">Mentor</MenuItem>
+
+                <MenuItem className="menuitem">Companies</MenuItem>
+
+                <MenuItem className="menuitem">Blog </MenuItem>
               </List>
             </Stack>
           </Grid>
