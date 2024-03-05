@@ -87,6 +87,8 @@ export const Topbar = () => {
             <Grid item md={8} lg={4}>
               <Box
                 sx={{
+                  display: "flex",
+                  justifyContent: "end  ",
                   mt: 2,
                   display: { xs: "none", md: "none", lg: "block" },
                 }}

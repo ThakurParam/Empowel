@@ -1,58 +1,54 @@
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
-import React from "react";
-import ellipse from "../images/trending0.png";
+import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material';
+import React from 'react';
+import ellipse from '../images/trending0.png';
 
-import TrendingCard from "../ui/trending-card";
+import TrendingCard from '../ui/trending-card';
 
 export const TrendingJobs = () => {
   return (
     <Box
       sx={{
+        py: 10,
         backgroundImage: `url(${ellipse})`,
+        backgroundPosition: ' center right',
+        backgroundRepeat: 'no-repeat',
 
-        backgroundPosition: " center right",
-        backgroundRepeat: "no-repeat",
-        p: 2,
-        ".containerstack": {
-          alignItems: "center",
-          justifyContent: "center",
+        h2: {
+          mb: 4,
         },
-        ".btn": {
+
+        '.btn': {
           borderRadius: 10,
           px: 4,
           border: 0,
+          mt: 4,
           py: 1,
           boxShadow: 0,
-          textTransform: "capitalize",
-          fontSize: "20px",
+          textTransform: 'capitalize',
+          fontSize: '20px',
         },
-        ".button": {
+        '.button': {
           mt: 5,
         },
       }}
     >
-      <Box sx={{ textAlign: "center", mt: 5 }}>
-        <Typography variant="h1" component="h1">
+      <Container>
+        <Typography variant="h2" component="h2" textAlign={'center'}>
           Trending Job Role on Empowel
         </Typography>
-      </Box>
-      <Container maxWidth="xl" sx={{ mt: 5 }}>
-        <Stack direction={"row"} flexWrap={"wrap"} className="containerstack">
-          {[...Array(4)].map((item, index) => (
-            <TrendingCard key={index} />
+        <Grid container spacing={1.5}>
+          {[...Array(8)].map((item, index) => (
+            <Grid item md={3} xs={12} sm={6} key={index}>
+              <TrendingCard />
+            </Grid>
           ))}
-        </Stack>
-        <Stack direction={"row"} flexWrap={"wrap"} className="containerstack">
-          {[...Array(4)].map((item, index) => (
-            <TrendingCard key={index} />
-          ))}
-        </Stack>
+        </Grid>
+        <Box textAlign={'center'}>
+          <Button variant="contained" className="btn">
+            view all
+          </Button>
+        </Box>
       </Container>
-      <Box className="button">
-        <Button variant="contained" className="btn">
-          view all
-        </Button>
-      </Box>
     </Box>
   );
 };

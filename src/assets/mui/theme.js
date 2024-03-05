@@ -17,6 +17,16 @@ export default function MuiTheme({ children }) {
         fontFamily: '"Hanken Grotesk", "Roboto","Helvetica","Arial",sans-serif',
         fontWeight: 900,
       },
+      h2: {
+        fontSize: 48,
+        fontFamily: '"Hanken Grotesk", "Roboto","Helvetica","Arial",sans-serif',
+        fontWeight: 900,
+      },
+      h4: {
+        fontSize: 28,
+        fontWeight: 700,
+        fontFamily: '"Hanken Grotesk", "Roboto","Helvetica","Arial",sans-serif',
+      },
       h5: {
         fontSize: 25,
         fontWeight: 400,

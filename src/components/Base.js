@@ -1,43 +1,78 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Grid,
+  IconButton,
+  List,
+  MenuItem,
+  Typography,
+} from "@mui/material";
 import React from "react";
-import empowel from "../images/Baseimage/E POWEL.png";
-import m from "../images/Baseimage/m.png";
-import twitter from "../images/Baseimage/logo-twitter.png";
-import facebook from "../images/Baseimage/Path.png";
-import instagram from "../images/Baseimage/logo-instagram.png";
-import linkedin from "../images/Baseimage/logo-linkedin.png";
+import { basetypo } from "../style/style";
+
 export const Base = () => {
   return (
-    <Box sx={{ bgcolor: "#161C2D", pt: 15, pb: 5 }}>
-      <Container maxWidth="xl">
+    <Box
+      sx={{
+        bgcolor: "#161C2D",
+        pt: 7,
+        pb: 5,
+        ".boxtitle": {
+          my: 2,
+        },
+        h2: {
+          color: "white",
+          fontWeight: 600,
+        },
+        ".typo": {
+          color: "white",
+          opacity: 0.7,
+        },
+        ".btn-box": {
+          display: "flex",
+          justifyContent: "end",
+        },
+        ".btn-btn": {
+          textTransform: "capitalize",
+          bgcolor: "#896DFF",
+          borderRadius: 8,
+          p: 2,
+          px: 3,
+        },
+        ".typo-btn": {
+          color: "white",
+          fontSize: "20px",
+        },
+        ".empowel": {
+          height: "30px",
+          width: "auto",
+        },
+        ".m-empowel": {
+          position: "absolute",
+          top: -18,
+          left: 19,
+          height: "50px",
+          width: "auto",
+        },
+        ".imagelogo": {
+          height: "25px",
+        },
+      }}
+    >
+      <Container>
         <Box>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6} lg={6}>
               <Box sx={{ textAlign: "start" }}>
-                <Box sx={{ width: "80%" }}>
-                  <Typography
-                    sx={{
-                      color: "#FFFFFF",
-                      fontWeight: 700,
-                      fontSize: { lg: "45.35px", md: "45.35px", xs: "30px" },
-                      lineHeight: { lg: "52.73px", md: "52.73px", xs: "4 0px" },
-                      letterSpacing: "-1.44px",
-                    }}
-                  >
+                <Box className="boxtitle">
+                  <Typography variant="h2" component={"h2"}>
                     Ready to realise your true potential?
                   </Typography>
                 </Box>
-                <Box sx={{ width: "90%", mt: 2 }}>
-                  <Typography
-                    sx={{
-                      color: "#FFFFFF",
-                      fontWeight: 400,
-                      fontSize: { lg: "30.77px", md: "30.77px", xs: "20px" },
-                      lineHeight: { lg: "46px", md: "46px", xs: "30px" },
-                      letterSpacing: "-0.24px",
-                      opacity: 0.5,
-                    }}
-                  >
+                <Box>
+                  <Typography variant="h5" component={"h5"} className="typo">
                     70% techies find their perfect opportunities within 10 days
                     on Cutshort.
                   </Typography>
@@ -45,32 +80,9 @@ export const Base = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={6} lg={6}>
-              <Box
-                sx={{
-                  textAlign: { lg: "end", md: "end", xs: "start" },
-                  mt: { lg: 0, md: 0, xs: 5 },
-                }}
-              >
-                <Button
-                  sx={{
-                    bgcolor: "#896DFF",
-                    textTransform: "none",
-                    borderRadius: "50px",
-                    p: 3,
-                    pl: 8,
-                    pr: 8,
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      color: "#FFFFFF",
-                      fontWeight: 400,
-                      fontSize: { lg: "22.64px", md: "22.64px", xs: "15px" },
-                      lineHeight: { lg: "42.61px", md: "42.61px", xs: "0px" },
-                      letterSpacing: "-0.8px",
-                      textAlign: "center",
-                    }}
-                  >
+              <Box className="btn-box">
+                <Button className="btn-btn">
+                  <Typography className="typo-btn">
                     Register your profile
                   </Typography>
                 </Button>
@@ -79,222 +91,118 @@ export const Base = () => {
           </Grid>
         </Box>
       </Container>
-      <Box sx={{ mt: 10 }}>
-        <Container maxWidth="xl">
+      <Divider sx={{ height: "2px", bgcolor: "grey", my: 3 }} />
+      <Box sx={{ mt: 7 }}>
+        <Container>
           <Box>
             <Grid container spacing={2}>
               <Grid item xs={12} md={3} lg={4}>
-                <Box sx={{ position: "relative", textAlign: "start" }}>
-                  <img src={empowel} alt="empowel" />
-                  <img
-                    src={m}
-                    alt="m"
-                    style={{ position: "absolute", top: -22, left: 24 }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    textAlign: "start",
-                    display: "flex",
-                    mt: 4,
-                  }}
-                >
-                  <img src={twitter} alt="twitter" />
-                  <img
-                    src={facebook}
-                    alt="facebook"
-                    style={{ marginLeft: "35px" }}
-                  />
-                  <img
-                    src={instagram}
-                    alt="instagram"
-                    style={{ marginLeft: "35px" }}
-                  />
-                  <img
-                    src={linkedin}
-                    alt="linkedin"
-                    style={{ marginLeft: "35px" }}
-                  />
-                </Box>
-              </Grid>
-              <Grid item xs={12} md={3} lg={2.5}>
-                <Box sx={{ textAlign: "start" }}>
-                  <Typography
+                <Box sx={{ mt: 3 }}>
+                  <Box sx={{ position: "relative", textAlign: "start" }}>
+                    <img
+                      src="/images/Baseimage/E POWEL.png"
+                      alt="empowel"
+                      className="empowel"
+                    />
+                    <img
+                      src="/images/Baseimage/m.png"
+                      alt="m"
+                      className="m-empowel"
+                    />
+                  </Box>
+                  <Box
                     sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
+                      textAlign: "start",
+                      display: "flex",
+                      mt: 4,
                     }}
                   >
-                    {" "}
-                    About us{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Careers{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Employer home{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Sitemap{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    Credits
-                  </Typography>
+                    <IconButton>
+                      <img
+                        src="/images/Baseimage/logo-twitter.png"
+                        alt="twitter"
+                        className="imagelogo"
+                      />
+                    </IconButton>
+                    <IconButton>
+                      <img
+                        src="/images/Baseimage/Path.png"
+                        alt="facebook"
+                        className="imagelogo"
+                      />{" "}
+                    </IconButton>
+
+                    <IconButton>
+                      <img
+                        src="/images/Baseimage/logo-instagram.png"
+                        alt="instagram"
+                        className="imagelogo"
+                      />{" "}
+                    </IconButton>
+
+                    <IconButton>
+                      <img
+                        src="/images/Baseimage/logo-linkedin.png"
+                        alt="linkedin"
+                        className="imagelogo"
+                      />{" "}
+                    </IconButton>
+                  </Box>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={3} lg={2.5}>
-                <Box sx={{ textAlign: "start" }}>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Help center{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Summons/{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Notices{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Grievances{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Report issue{" "}
-                  </Typography>
-                </Box>
+              <Grid item xs={12} md={2.5}>
+                <List>
+                  <MenuItem>
+                    <Typography sx={basetypo}> About us </Typography>
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Careers </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Employer home </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Sitemap </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}>Credits</Typography>{" "}
+                  </MenuItem>
+                </List>
               </Grid>
-              <Grid item xs={12} md={3} lg={2.5}>
-                <Box sx={{ textAlign: "start" }}>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Privacy policy
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Terms & conditions{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Fraud alert{" "}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: { lg: "25.37px", md: "25.37px", xs: "20px" },
-                      lineHeight: "52px",
-                      letterSpacing: "-0.24px",
-                      color: "white",
-                    }}
-                  >
-                    {" "}
-                    Trust & safety
-                  </Typography>
-                </Box>
+              <Grid item xs={12} md={2.5}>
+                <List>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Help center</Typography>
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Summons/ </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Notices </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Grievances </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}>Report issue</Typography>{" "}
+                  </MenuItem>
+                </List>
+              </Grid>
+              <Grid item xs={12} md={2.5}>
+                <List>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Privacy policy</Typography>
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Terms & Conditions </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Fraud alert </Typography>{" "}
+                  </MenuItem>
+                  <MenuItem>
+                    <Typography sx={basetypo}> Trust & safety </Typography>{" "}
+                  </MenuItem>
+                </List>
               </Grid>
             </Grid>
           </Box>
