@@ -1,4 +1,14 @@
-import { Box, Button, Card, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  Container,
+  Grid,
+  List,
+  MenuItem,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import empowel from "../images/empowel.png";
 
@@ -6,132 +16,93 @@ import { Mobiledrawer } from "../Assests/Mobiledrawer";
 
 export const Topbar = () => {
   return (
-    <Card sx={{ p: 2 }}>
-      <Container maxWidth="xl">
-        <Box>
-          <Grid container spacing={2}>
-            <Grid item md={8} lg={8}>
-              <Grid container spacing={12}>
-                <Grid item xs={2} md={2.5} lg={2.5}>
-                  <img src={empowel} alt="header " className="imagetop" />
-                </Grid>
-                <Grid
-                  item
-                  xs={7}
-                  md={7}
-                  lg={7}
-                  sx={{ display: { xs: "none", md: "none", lg: "block" } }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      mt: 2,
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontWeight: 400,
-                        fontSize: "20px",
-                        lineHeight: "26.06px",
-                        color: "#000000",
-                      }}
-                    >
-                      Find Jobs
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontWeight: 400,
-                        fontSize: "20px",
-                        lineHeight: "26.06px",
-                        color: "#000000",
-                      }}
-                    >
-                      Employers
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontWeight: 400,
-                        fontSize: "20px",
-                        lineHeight: "26.06px",
-                        color: "#000000",
-                      }}
-                    >
-                      Mentor
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontWeight: 400,
-                        fontSize: "20px",
-                        lineHeight: "26.06px",
-                        color: "#000000",
-                      }}
-                    >
-                      Companies
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontWeight: 400,
-                        fontSize: "20px",
-                        lineHeight: "26.06px",
-                        color: "#000000",
-                      }}
-                    >
-                      Blog
-                    </Typography>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Grid>
+    <Card
+      sx={{
+        pt: 1,
+        ".tittleimg": {
+          height: "30px",
+          width: "auto",
+        },
+        ".btn-head": {
+          textTransform: "capitalize",
+          border: "1px solid black",
+          borderRadius: 5,
+          px: 3,
+          my: "auto",
+        },
+        ".btn-log": {
+          color: "black",
+        },
+        ".btn-heads": {
+          textTransform: "capitalize",
 
-            <Grid item md={8} lg={4}>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "end  ",
-                  mt: 2,
-                  display: { xs: "none", md: "none", lg: "block" },
-                }}
-              >
-                <Button>
-                  <Typography
-                    sx={{
-                      fontWeight: 400,
-                      fontSize: "20px",
-                      lineHeight: "26.06px",
-                      color: "#5A3ED1",
-                      textTransform: "none",
-                    }}
-                  >
-                    Log In
-                  </Typography>
-                </Button>
-                <Button sx={{ bgcolor: "#5A3ED1" }}>
-                  <Typography
-                    sx={{
-                      color: "#FFFFFF",
-                      fontWeight: 400,
-                      fontSize: "20px",
-                      lineHeight: "26.06px",
-                      textTransform: "none",
-                    }}
-                  >
-                    Register
-                  </Typography>
-                </Button>
-              </Box>
-            </Grid>
+          borderRadius: 5,
+          px: 3,
+          my: "auto",
+          bgcolor: "#5A3ED1",
+        },
+        ".btn-sign": {
+          color: "white",
+        },
+      }}
+    >
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={6} md={3}>
+            <Box sx={{ my: "auto " }}>
+              <img
+                src="/images/empowel.png"
+                alt="headerimg"
+                className="tittleimg"
+              />
+            </Box>
           </Grid>
-        </Box>
-        <Box
-          sx={{
-            display: { xs: "block", md: "block", lg: "none" },
-            textAlign: "end",
-            mt: { lg: 0, md: 0, xs: -6 },
-          }}
-        >
-          {<Mobiledrawer />}
-        </Box>
+          <Grid
+            item
+            xs={6}
+            md={6}
+            sx={{ display: { md: "block", xs: "none" } }}
+          >
+            <Stack direction={"row"}>
+              <List>
+                <MenuItem>Find Jobs</MenuItem>
+              </List>
+              <List>
+                <MenuItem>Employers</MenuItem>
+              </List>
+              <List>
+                <MenuItem>Mentor</MenuItem>
+              </List>
+              <List>
+                <MenuItem>Companies</MenuItem>
+              </List>
+              <List>
+                <MenuItem>Blog </MenuItem>
+              </List>
+            </Stack>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Box sx={{ display: { md: "block", xs: "none" } }}>
+              <Stack direction={"row"} spacing={2}>
+                <Button className="btn-head">
+                  <Typography className="btn-log">log in</Typography>
+                </Button>
+                <Button className="btn-heads">
+                  <Typography className="btn-sign">Sign up</Typography>
+                </Button>
+              </Stack>
+            </Box>
+            <Box
+              sx={{
+                display: { xs: "flex", md: "none" },
+                justifyContent: "end",
+                mt: { lg: 0, md: 0, xs: 0 },
+              }}
+            >
+              {<Mobiledrawer />}
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
     </Card>
   );

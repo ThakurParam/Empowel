@@ -1,11 +1,7 @@
 import { Box, Container, IconButton, Typography } from "@mui/material";
 import React from "react";
-import bg from "../images/BG.png";
 import { Navigation } from "swiper/modules";
-import { styled } from "@mui/system";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import dial from "../images/reviewimage/justdial.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,43 +9,12 @@ import "swiper/css/scrollbar";
 import { ChevronLeftRounded, ChevronRightRounded } from "@mui/icons-material";
 import { grey } from "@mui/material/colors";
 
-// const CustomPrevButton = styled("div")(() => ({
-//   position: "absolute",
-//   left: 0,
-//   top: "50%",
-//   transform: "translateY(-50%)",
-//   border: "3px solid black",
-
-//   borderRadius: "50%",
-//   width: "40px",
-//   height: "40px",
-//   display: "flex",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   cursor: "pointer",
-//   ".custom-prev": { fontSize: "30px", fontWeight: 700 },
-// }));
-// const CustomNextButton = styled("div")(() => ({
-//   position: "absolute",
-//   right: 0,
-//   top: "50%",
-//   transform: "translateY(-50%)",
-//   border: "3px solid black",
-//   borderRadius: "50%",
-//   width: "40px",
-//   height: "40px",
-//   display: "flex",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   cursor: "pointer",
-//   ".custom-next": { fontSize: "30px", fontWeight: 700 },
-// }));
 export const Reviews = () => {
   return (
     <>
       <Box
         sx={{
-          backgroundImage: `url(${bg})`,
+          backgroundImage: `url(${"/images/reviewimage/BG.png"})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           width: "100%",
@@ -129,7 +94,11 @@ export const Reviews = () => {
                       habitant vulputate facilisis.
                     </Typography>
                     <Box className="boximg">
-                      <img src={dial} alt="di" className="imageslide" />
+                      <img
+                        src="/images/reviewimage/justdial.png"
+                        alt="di"
+                        className="imageslide"
+                      />
                     </Box>
                   </Box>
                 </SwiperSlide>

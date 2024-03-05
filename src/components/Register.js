@@ -1,8 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import com from "../images/Register/com.png";
-import vector1 from "../images/Register/Vector1.png";
-import vector2 from "../images/Register/Vector2.png";
 
 export const Register = () => {
   return (
@@ -51,7 +48,7 @@ export const Register = () => {
           <Grid item xs={12} md={6}>
             <Box>
               <img
-                src={com}
+                src="/images/Register/com.png"
                 alt="com"
                 style={{ width: "100%", height: "100%" }}
               ></img>
@@ -89,8 +86,16 @@ export const Register = () => {
               </Box>
             </Box>
             <Box>
-              <img src={vector1} alt="vector angle" className="vectorangle" />
-              <img src={vector2} className="vectorangle" alt="second vector " />
+              <img
+                src="/images/Register/Vector1.png"
+                alt="vector angle"
+                className="vectorangle"
+              />
+              <img
+                src="/images/Register/Vector2.png"
+                className="vectorangle"
+                alt="second vector "
+              />
             </Box>
           </Grid>
         </Grid>
