@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Container,
-  IconButton,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Container, IconButton, Typography } from "@mui/material";
 import React from "react";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";

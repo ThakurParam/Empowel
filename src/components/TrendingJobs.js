@@ -1,8 +1,8 @@
-import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material';
-import React from 'react';
-import ellipse from '../images/trending0.png';
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import React from "react";
+import ellipse from "../images/trending0.png";
 
-import TrendingCard from '../ui/trending-card';
+import TrendingCard from "../ui/trending-card";
 
 export const TrendingJobs = () => {
   return (
@@ -10,30 +10,30 @@ export const TrendingJobs = () => {
       sx={{
         py: 10,
         backgroundImage: `url(${ellipse})`,
-        backgroundPosition: ' center right',
-        backgroundRepeat: 'no-repeat',
+        backgroundPosition: " center right",
+        backgroundRepeat: "no-repeat",
 
         h2: {
           mb: 4,
         },
 
-        '.btn': {
+        ".btn": {
           borderRadius: 10,
           px: 4,
           border: 0,
           mt: 4,
           py: 1,
           boxShadow: 0,
-          textTransform: 'capitalize',
-          fontSize: '20px',
+          textTransform: "capitalize",
+          fontSize: "20px",
         },
-        '.button': {
+        ".button": {
           mt: 5,
         },
       }}
     >
       <Container>
-        <Typography variant="h2" component="h2" textAlign={'center'}>
+        <Typography variant="h2" component="h2" textAlign={"center"}>
           Trending Job Role on Empowel
         </Typography>
         <Grid container spacing={1.5}>
@@ -43,7 +43,7 @@ export const TrendingJobs = () => {
             </Grid>
           ))}
         </Grid>
-        <Box textAlign={'center'}>
+        <Box textAlign={"center"}>
           <Button variant="contained" className="btn">
             view all
           </Button>

@@ -10,7 +10,6 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import empowel from "../images/empowel.png";
 
 import { Mobiledrawer } from "../Assests/Mobiledrawer";
 
@@ -87,7 +86,7 @@ export const Topbar = () => {
                 <Button className="btn-head">
                   <Typography className="btn-log">log in</Typography>
                 </Button>
-                <Button className="btn-heads">
+                <Button variant="contained" className="btn-heads">
                   <Typography className="btn-sign">Sign up</Typography>
                 </Button>
               </Stack>
