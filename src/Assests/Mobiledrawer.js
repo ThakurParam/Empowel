@@ -5,6 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, Button, Typography } from "@mui/material";
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
+// import { useNavigate } from "react-router-dom";
 export const Mobiledrawer = () => {
   const [open, setOpen] = useState(false);
 
@@ -17,6 +18,10 @@ export const Mobiledrawer = () => {
     height: "100%",
     backgroundColor: "#3E1D18",
   };
+  // const navigate = useNavigate();
+  // const handleClick = () => {
+  //   navigate("/findjobs");
+  // };
   return (
     <>
       <div>
@@ -45,6 +50,7 @@ export const Mobiledrawer = () => {
                 display: "flex",
                 // justifyContent: "space-evenly",
               }}
+              // onClick={handleClick}
             >
               <Typography
                 sx={{

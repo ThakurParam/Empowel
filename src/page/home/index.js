@@ -1,13 +1,13 @@
-import React from 'react';
-import Layout from '../../assets/Layout';
-import { HeadBox } from '../../components/HeadBox';
-import { JobOpening } from '../../components/JobOpening';
-import { FindJobs } from '../../components/FindJobs';
-import { TrendingJobs } from '../../components/TrendingJobs';
-import { Register } from '../../components/Register';
-import { Popularjobs } from '../../components/Popularjobs';
-import { Reviews } from '../../components/Reviews';
-import TopCompaniesHiring from '../../components/TopCompaniesHiring';
+import React from "react";
+import Layout from "../../assets/Layout";
+import { HeadBox } from "../../components/Homepage/HeadBox";
+import { JobOpening } from "../../components/Homepage/JobOpening";
+import { FindJobs } from "../../components/Homepage/FindJobs";
+import { TrendingJobs } from "../../components/Homepage/TrendingJobs";
+import { Register } from "../../components/Homepage/Register";
+import { Popularjobs } from "../../components/Homepage/Popularjobs";
+import { Reviews } from "../../components/Homepage/Reviews";
+import TopCompaniesHiring from "../../components/Homepage/TopCompaniesHiring";
 
 export default function HomePage() {
   return (
