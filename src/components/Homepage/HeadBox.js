@@ -104,7 +104,7 @@ export const HeadBox = () => {
           left: "10%",
           height: "13%",
           width: "auto",
-          display: { xs: "none", md: "block" },
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".img-second": {
           position: "absolute",
@@ -113,7 +113,7 @@ export const HeadBox = () => {
           height: "20%",
           width: "auto",
           right: "8%",
-          display: { xs: "none", md: "block" },
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".img-third": {
           position: "absolute",
@@ -121,7 +121,7 @@ export const HeadBox = () => {
           top: "40%",
           left: "0%",
           height: "15%",
-          display: { xs: "none", md: "block" },
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".img-fourth": {
           position: "absolute",
@@ -129,7 +129,7 @@ export const HeadBox = () => {
           top: "45%",
           right: "0%",
           height: "15%",
-          display: { xs: "none", md: "block" },
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".img-fifth": {
           position: "absolute",
@@ -137,7 +137,7 @@ export const HeadBox = () => {
           top: "69%",
           right: "15%",
           height: "10%",
-          display: { xs: "none", md: "block" },
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".img-girl": {
           position: "absolute",
@@ -145,7 +145,7 @@ export const HeadBox = () => {
           top: "70%",
           left: "10%",
           height: "10%",
-          display: { xs: "none", md: "block" },
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".dot-1": {
           position: "absolute",
@@ -154,6 +154,7 @@ export const HeadBox = () => {
           height: "2.5%",
           width: "auto",
           zIndex: 1,
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".dot-2": {
           position: "absolute",
@@ -162,6 +163,7 @@ export const HeadBox = () => {
           height: "2.5%",
           width: "auto",
           zIndex: 1,
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".dot-3": {
           position: "absolute",
@@ -170,6 +172,7 @@ export const HeadBox = () => {
           height: "2.5%",
           width: "auto",
           zIndex: 1,
+          display: { xs: "none", md: "none", lg: "block" },
         },
         ".dot-4": {
           position: "absolute",
@@ -178,6 +181,7 @@ export const HeadBox = () => {
           height: "2.5%",
           width: "auto",
           zIndex: 1,
+          display: { xs: "none", md: "none", lg: "block" },
         },
       }}
     >

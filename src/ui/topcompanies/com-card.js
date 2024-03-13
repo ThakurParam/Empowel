@@ -12,11 +12,14 @@ import React from "react";
 export default function ComCard({ name }) {
   return (
     <Grid container spacing={3}>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={11} md={6}>
         <Card
+          // variant="elevation"
           sx={{
             p: 2,
             borderRadius: 5,
+            boxShadow: "0px 0px 25px rgb(0,0,0,0.1)",
+
             ".review-box": {
               display: "flex",
               justifyContent: "space-between",
@@ -84,11 +87,13 @@ export default function ComCard({ name }) {
           </Stack>
         </Card>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={11} md={6}>
         <Card
           sx={{
             p: 2,
             borderRadius: 5,
+            boxShadow: "0px 0px 25px rgb(0,0,0,0.1)",
+
             ".review-box": {
               display: "flex",
               justifyContent: "space-between",

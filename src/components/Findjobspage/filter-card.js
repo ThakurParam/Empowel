@@ -21,7 +21,7 @@ export default function FilterCard({ name }) {
       sx={{
         p: 3,
         borderRadius: 4,
-        boxShadow: "0px 0px 25px rgb(0,0,0,0.2)",
+        boxShadow: "0px 0px 25px rgb(0,0,0,0.1)",
 
         ".select-box": {
           border: "none",

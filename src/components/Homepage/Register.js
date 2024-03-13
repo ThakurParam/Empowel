@@ -31,7 +31,7 @@ export const Register = () => {
             textTransform: "none",
             bgcolor: "#896DFF",
             p: 2,
-            borderRadius: "none",
+            borderRadius: "0px",
           },
           ".btn-text": {
             color: "white",
@@ -41,6 +41,7 @@ export const Register = () => {
           ".btns-btn": {
             textTransform: "none",
             p: 2,
+            borderRadius: 0,
           },
           ".btn-text2": {
             color: "white",

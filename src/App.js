@@ -1,4 +1,3 @@
-// import { Route, Router, Routes } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import FindJobs from "./page/Findjob";
@@ -19,8 +18,6 @@ function App() {
         </Routes>
       </React.Fragment>
     </Router>
-    // <CompanySlider />
-    // <SalaryCollapse />
   );
 }
 

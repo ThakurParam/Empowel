@@ -1,5 +1,6 @@
 import { Box, Button, Card, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
+import Bookmark from "../../Assests/bookmark";
 
 export default function CompanyCard({
   image,
@@ -57,25 +58,30 @@ export default function CompanyCard({
     >
       <Grid container spacing={2}>
         <Grid item xs={12} md={12}>
-          <Stack direction={"row"} spacing={2}>
-            <img
-              src={"/images/findjobs/fndjobscard.png" || image}
-              alt="cardcompany"
-              className="companylogo"
-            />
-            <Box className="tittlebox">
-              <Typography variant="h5" component={"h5"}>
-                <b>{"Senior Specialist" || tittle}</b>
-              </Typography>
-              <Typography variant="p" component={"p"} className="subtittle">
-                {"LTIMindtree Limited " || subtittle}
-              </Typography>
+          <Box display={"flex"} justifyContent={"space-between"}>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={2}>
+              <img
+                src={"/images/findjobs/fndjobscard.png" || image}
+                alt="cardcompany"
+                className="companylogo"
+              />
+              <Box className="tittlebox">
+                <Typography variant="h5" component={"h5"}>
+                  <b>{"Senior Specialist" || tittle}</b>
+                </Typography>
+                <Typography variant="p" component={"p"} className="subtittle">
+                  {"LTIMindtree Limited " || subtittle}
+                </Typography>
+              </Box>
+            </Stack>
+            <Box>
+              <Bookmark />
             </Box>
-          </Stack>
+          </Box>
         </Grid>
         <Grid item xs={12} md={12}>
           <Stack spacing={2}>
-            <Stack direction={"row"} spacing={3}>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={3}>
               <Stack spacing={1} direction={"row"} className="box1">
                 <img
                   src="/images/findjobs/hours.png"

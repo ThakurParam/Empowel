@@ -18,10 +18,7 @@ export const Mobiledrawer = () => {
     height: "100%",
     backgroundColor: "#3E1D18",
   };
-  // const navigate = useNavigate();
-  // const handleClick = () => {
-  //   navigate("/findjobs");
-  // };
+
   return (
     <>
       <div>

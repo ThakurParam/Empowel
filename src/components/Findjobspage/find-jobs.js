@@ -73,7 +73,11 @@ export default function FindJobpage({ count }) {
                     >
                       Search result: <b>{"9788" || count} Jobs Found</b>
                     </Typography>
-                    <Stack direction={"row"} spacing={2} alignItems={"center"}>
+                    <Stack
+                      direction={{ xs: "column", md: "row" }}
+                      spacing={2}
+                      alignItems={"center"}
+                    >
                       <Typography
                         variant="p"
                         component={"p"}

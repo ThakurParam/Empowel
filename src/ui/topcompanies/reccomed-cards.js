@@ -1,5 +1,7 @@
+import { BookmarkBorderRounded } from "@mui/icons-material";
 import { Box, Button, Card, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
+import Bookmark from "../../Assests/bookmark";
 
 export default function ReccomedCards({
   image,
@@ -12,10 +14,10 @@ export default function ReccomedCards({
 }) {
   return (
     <Card
-      // variant="outlined"
+      // elevation={3}
       sx={{
-        borderRadius: 7,
-        boxShadow: "0px 0px 25px rgb(0,0,0,0.05)",
+        borderRadius: 5,
+        boxShadow: "0px 0px 25px rgb(0,0,0,0.1)",
         p: 3,
         ".companylogo": {
           height: "80px",
@@ -63,13 +65,22 @@ export default function ReccomedCards({
               alt="cardcompany"
               className="companylogo"
             />
-            <Box className="tittlebox">
-              <Typography variant="h5" component={"h5"}>
-                <b>{"Senior Specialist" || tittle}</b>
-              </Typography>
-              <Typography variant="p" component={"p"} className="subtittle">
-                {"LTIMindtree Limited " || subtittle}
-              </Typography>
+            <Box display={"flex"} justifyContent={"space-between"}>
+              <Box className="tittlebox">
+                <Typography variant="h5" component={"h5"}>
+                  <b>{"Senior Specialist" || tittle}</b>
+                </Typography>
+                <Typography variant="p" component={"p"} className="subtittle">
+                  {"LTIMindtree Limited " || subtittle}
+                </Typography>
+              </Box>
+              <Box
+                justifyContent={"center"}
+                alignItems={"center"}
+                display={"flex"}
+              >
+                <Bookmark />
+              </Box>
             </Box>
           </Stack>
         </Grid>

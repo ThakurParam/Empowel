@@ -1,4 +1,4 @@
-import { Box, Container, IconButton, Stack, Typography } from "@mui/material";
+import { Box, Container, IconButton, Stack } from "@mui/material";
 import React from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -70,10 +70,10 @@ export default function CompanySlider() {
                   slidesPerView: 1,
                 },
                 768: {
-                  slidesPerView: 1,
+                  slidesPerView: 3,
                 },
                 900: {
-                  slidesPerView: 6,
+                  slidesPerView: 5,
                 },
               }}
               navigation={{
