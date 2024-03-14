@@ -27,7 +27,7 @@ export const Topbar = () => {
   return (
     <Card
       sx={{
-        pt: 1,
+        py: 2,
         ".tittleimg": {
           height: "30px",
           width: "auto",
@@ -59,7 +59,6 @@ export const Topbar = () => {
         ".list": {
           display: "flex",
           justifyContent: "start",
-          alignItems: "center",
         },
       }}
     >
@@ -81,7 +80,7 @@ export const Topbar = () => {
             sx={{ display: { md: "block", xs: "none" } }}
           >
             {/* <Stack direction={"row"}> */}
-            <List className="list">
+            <Box className="list">
               <MenuItem className="menuitem" onClick={handleClick}>
                 Find Jobs
               </MenuItem>
@@ -95,7 +94,7 @@ export const Topbar = () => {
               </MenuItem>
 
               <MenuItem className="menuitem">Blog </MenuItem>
-            </List>
+            </Box>
             {/* </Stack> */}
           </Grid>
           <Grid item xs={6} md={3}>
