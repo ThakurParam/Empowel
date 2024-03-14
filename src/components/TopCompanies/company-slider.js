@@ -1,59 +1,61 @@
-import { Box, Container, IconButton, Stack } from '@mui/material';
-import React from 'react';
-import { Navigation } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import { ChevronLeftRounded, ChevronRightRounded } from '@mui/icons-material';
-import { grey } from '@mui/material/colors';
-import SliderCard from '../../ui/topcompanies/slider-card';
+import { Box, Container, IconButton, Stack } from "@mui/material";
+import React from "react";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { ChevronLeftRounded, ChevronRightRounded } from "@mui/icons-material";
+import { grey } from "@mui/material/colors";
+import SliderCard from "../../ui/topcompanies/slider-card";
 
 export default function CompanySlider() {
   return (
     <>
       <Box
         sx={{
-          width: '100%',
+          width: "100%",
           pt: 7,
           pb: 7,
           mt: 5,
-          position: 'relative',
+          position: "relative",
 
-          textAlign: 'center',
-          '.imageslide': {
-            height: '40px',
-            width: 'auto',
+          textAlign: "center",
+          ".imageslide": {
+            height: "40px",
+            width: "auto",
           },
-          '.boximg': {
-            width: '80%',
-            mx: 'auto',
+          ".boximg": {
+            width: "80%",
+            mx: "auto",
             my: 4,
           },
-          '.btn-nav': {
-            position: 'absolute',
+          ".btn-nav": {
+            position: "absolute",
             zIndex: 999,
             height: 30,
             width: 30,
             // bgcolor: '#fff',
-            backdropFilter: 'blur(10px)',
-            top: '50%',
-            border: '2px solid #000',
-            color: '#000',
-            '&.swiper-button-disabled': {
-              cursor: 'default',
+            backdropFilter: "blur(10px)",
+            top: "50%",
+            border: "2px solid #000",
+            color: "#000",
+            "&.swiper-button-disabled": {
+              cursor: "default",
               color: grey[500],
               borderColor: grey[500],
             },
-            '&.prevs': {
+            "&.prevs": {
               left: { xs: 15, md: 80 },
+              top: "45%",
             },
-            '&.nexts': {
+            "&.nexts": {
               right: { xs: 15, md: 80 },
+              top: "45%",
             },
           },
-          '.slide': {
+          ".slide": {
             py: 1,
             // px: 1,
           },
@@ -77,8 +79,8 @@ export default function CompanySlider() {
                 },
               }}
               navigation={{
-                prevEl: '.btn-prev',
-                nextEl: '.btn-next',
+                prevEl: ".btn-prev",
+                nextEl: ".btn-next",
               }}
               onSwiper={(swiper) => console.log(swiper)}
             >
