@@ -47,6 +47,7 @@ export const Topbar = () => {
 
           borderRadius: 5,
           px: 3,
+          py: 1,
           my: "auto",
           bgcolor: "#5A3ED1",
         },
