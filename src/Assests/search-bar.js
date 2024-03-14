@@ -13,8 +13,8 @@ export default function SearchBar() {
 
         borderRadius: 10,
         mx: "auto",
-        py: 2,
-        px: 3,
+        py: 1,
+        px: 2,
         ".icon": {
           height: 2,
           display: "flex",
@@ -52,7 +52,7 @@ export default function SearchBar() {
         },
         ".btn": {
           borderRadius: 10,
-          px: 2,
+          px: 3,
           border: 0,
           py: 1,
           boxShadow: 0,

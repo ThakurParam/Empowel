@@ -56,11 +56,16 @@ export const Topbar = () => {
         ".menuitem": {
           borderRadius: 3,
         },
+        ".list": {
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+        },
       }}
     >
       <Container>
         <Grid container spacing={2}>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={6} md={1.5}>
             <Box sx={{ my: "auto " }}>
               <img
                 src="/images/empowel.png"
@@ -72,30 +77,26 @@ export const Topbar = () => {
           <Grid
             item
             xs={6}
-            md={6}
+            md={7.5}
             sx={{ display: { md: "block", xs: "none" } }}
           >
-            <Stack direction={"row"}>
-              <List
-                sx={{
-                  display: "flex",
-                }}
-              >
-                <MenuItem className="menuitem" onClick={handleClick}>
-                  Find Jobs
-                </MenuItem>
+            {/* <Stack direction={"row"}> */}
+            <List className="list">
+              <MenuItem className="menuitem" onClick={handleClick}>
+                Find Jobs
+              </MenuItem>
 
-                <MenuItem className="menuitem">Employers</MenuItem>
+              <MenuItem className="menuitem">Employers</MenuItem>
 
-                <MenuItem className="menuitem">Mentor</MenuItem>
+              <MenuItem className="menuitem">Mentor</MenuItem>
 
-                <MenuItem className="menuitem" onClick={handleTabClick}>
-                  Companies
-                </MenuItem>
+              <MenuItem className="menuitem" onClick={handleTabClick}>
+                Companies
+              </MenuItem>
 
-                <MenuItem className="menuitem">Blog </MenuItem>
-              </List>
-            </Stack>
+              <MenuItem className="menuitem">Blog </MenuItem>
+            </List>
+            {/* </Stack> */}
           </Grid>
           <Grid item xs={6} md={3}>
             <Box sx={{ display: { md: "block", xs: "none" } }}>
@@ -104,7 +105,7 @@ export const Topbar = () => {
                   <Typography className="btn-log">log in</Typography>
                 </Button>
                 <Button variant="contained" className="btn-heads">
-                  <Typography className="btn-sign">Sign up</Typography>
+                  <Typography className="btn-sign"> Register</Typography>
                 </Button>
               </Stack>
             </Box>
