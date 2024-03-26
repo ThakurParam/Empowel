@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ComCard({ name }) {
   return (
@@ -61,17 +62,19 @@ export default function ComCard({ name }) {
                   <Typography variant="h6" component={"h6"}>
                     <b> {"Preludesys" || name}</b>
                   </Typography>
-
-                  <CardActionArea className="review-box">
-                    <Box>
-                      <Typography variant="p" component={"p"}>
-                        1 reviews
-                      </Typography>
-                    </Box>
-                    <Box textAlign={"end"}>
-                      <NavigateNextRounded />
-                    </Box>
-                  </CardActionArea>
+                  <Link to={"/company-detail"}>
+                    {" "}
+                    <CardActionArea className="review-box">
+                      <Box>
+                        <Typography variant="p" component={"p"}>
+                          1 reviews
+                        </Typography>
+                      </Box>
+                      <Box textAlign={"end"}>
+                        <NavigateNextRounded />
+                      </Box>
+                    </CardActionArea>
+                  </Link>
                 </Box>
               </Box>
             </Stack>
