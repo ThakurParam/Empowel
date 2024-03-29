@@ -44,13 +44,10 @@ a {
   color: black;
 }
 
-/* .custom-prev {
-  font-size: 30px;
-  font-weight: 700;
-} */
-/* .custom-next {
- 
-} */
+.css-19jrrh5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  font-weight: 900 !important;
+}
+
 @media only screen and (max-width: 600px) {
   .imageman {
     display: none;

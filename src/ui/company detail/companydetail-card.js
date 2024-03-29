@@ -14,7 +14,7 @@ export default function CompanyDetailCard({
 }) {
   return (
     <Card
-      variant="outlined"
+      variant="elevation"
       sx={{
         borderRadius: 7,
         boxShadow: "0px 0px 25px rgb(0,0,0,0.1)",

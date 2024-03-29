@@ -128,13 +128,12 @@ export default function CompanyDetailPage() {
           },
           ".btn-prev-next": {
             p: 1,
-            px: 2,
+            px: 3,
             fontSize: "15px",
             m: 1,
             textTransform: "capitalize",
-            border: "none",
-            outline: "none",
             borderRadius: 4,
+            bgcolor: "transparent",
           },
 
           ".select-box": {
@@ -194,7 +193,7 @@ export default function CompanyDetailPage() {
               <Typography className="count-typo">
                 <b>114 Job opening at Nomura</b>
               </Typography>
-              <Box sx={{ bgcolor: grey[300], mt: 2 }}>
+              <Box sx={{ bgcolor: grey[100], mt: 2 }}>
                 <Stack direction={{ md: "row", xs: "column" }} spacing={1}>
                   {[...Array(4)].map((item, index) => (
                     <select name="" id="" className="select-box">
@@ -208,7 +207,7 @@ export default function CompanyDetailPage() {
                 </Stack>
               </Box>
               <Box my={7}>
-                <Stack spacing={2}>
+                <Stack spacing={4}>
                   {[...Array(6)].map((item, index) => (
                     <CompanyDetailCard />
                   ))}

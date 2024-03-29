@@ -11,11 +11,14 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-import React from "react";
+import React, { useState } from "react";
 
 import { Mobiledrawer } from "../../Assests/Mobiledrawer";
+import Loginpage from "../../page/Login/loginpage";
 
 export const Topbar = () => {
+  const [openPopup, setOpenPopup] = useState(false);
+
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -24,6 +27,13 @@ export const Topbar = () => {
   const handleTabClick = () => {
     navigate("/topcompanies");
   };
+  const handleLoginClick = () => {
+    setOpenPopup(true);
+  };
+  const handleClosePopup = () => {
+    setOpenPopup(false);
+  };
+
   return (
     <Card
       sx={{
@@ -101,9 +111,11 @@ export const Topbar = () => {
           <Grid item xs={6} md={3}>
             <Box sx={{ display: { md: "block", xs: "none" } }}>
               <Stack direction={"row"} spacing={2}>
-                <Button className="btn-head">
+                <Button className="btn-head" onClick={handleLoginClick}>
                   <Typography className="btn-log">log in</Typography>
                 </Button>
+                <Loginpage open={openPopup} onClose={handleClosePopup} />
+
                 <Button variant="contained" className="btn-heads">
                   <Typography className="btn-sign"> Register</Typography>
                 </Button>

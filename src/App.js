@@ -8,6 +8,9 @@ import React from "react";
 import TopCompanies from "./page/Top companies";
 import CompanyDetailPage from "./components/CompanyDetail/companydetailpage";
 import DetailPage from "./page/Company detail/detailpage";
+import Pagination from "./Assests/pagination";
+import Loginpage from "./page/Login/loginpage";
+import JobDetail from "./page/Findjob/jobdetail";
 
 function App() {
   return (
@@ -18,9 +21,12 @@ function App() {
           <Route path="/findjobs" element={<FindJobs />} />
           <Route path="/topcompanies" element={<TopCompanies />} />
           <Route path="/company-detail" element={<DetailPage />} />
+          <Route path="/job-detail" element={<JobDetail />} />
         </Routes>
       </React.Fragment>
     </Router>
+    // <Pagination />
+    // <Loginpage />
   );
 }
 

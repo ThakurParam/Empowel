@@ -3,6 +3,7 @@ import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import FilterCard from "./filter-card";
 import CompanyCard from "../../ui/Findjobscards/company-card";
 import SearchBar from "../../Assests/search-bar";
+import { Link } from "react-router-dom";
 
 export default function FindJobpage({ count }) {
   return (
@@ -98,9 +99,11 @@ export default function FindJobpage({ count }) {
                   </Box>
                   <Box>
                     <Stack spacing={4}>
-                      {[...Array(6)].map((item, index) => (
-                        <CompanyCard key={index} />
-                      ))}
+                      <Link to={"/job-detail"}>
+                        {[...Array(6)].map((item, index) => (
+                          <CompanyCard key={index} />
+                        ))}
+                      </Link>
                     </Stack>
                   </Box>
                 </Box>

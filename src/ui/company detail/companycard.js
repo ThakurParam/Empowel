@@ -35,7 +35,7 @@ export default function CompanyCarddetail({ CompanyName, service, Id, Count }) {
             px: 5,
             py: 4,
             borderRadius: 3,
-            boxShadow: "0px 0px 25px rgb(0,0,0,0.3)",
+            boxShadow: "0px 0px 25px rgb(0,0,0,0.1)",
             height: "100%",
           }}
         >

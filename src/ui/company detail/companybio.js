@@ -36,7 +36,14 @@ export default function CompanyBio() {
           },
         }}
       >
-        <Card sx={{ p: 4, borderRadius: 4, height: "100%" }}>
+        <Card
+          sx={{
+            p: 4,
+            borderRadius: 4,
+            height: "100%",
+            boxShadow: "0px 0px 25px rgb(0,0,0,0.1)",
+          }}
+        >
           <Stack spacing={3}>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
               <Box className="stack">
