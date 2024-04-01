@@ -104,10 +104,6 @@ export default function CompanyDetailPage() {
             fontFamily: "Hanken Grotesk",
           },
 
-          ".array-box": {
-            display: "flex",
-            justifyContent: "center",
-          },
           ".list": {
             display: "flex",
           },
